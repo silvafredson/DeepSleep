@@ -72,7 +72,7 @@
 		65B32BD8299AA2DB002AEED9 /* DeepSleepUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepSleepUITests.swift; sourceTree = "<group>"; };
 		65B32BDA299AA2DB002AEED9 /* DeepSleepUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepSleepUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		65B8147729B11AD600FCAEED /* nove.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = nove.caf; sourceTree = "<group>"; };
-		65B8147829B11AD600FCAEED /* doze.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = doze.caf; sourceTree = "<group>"; };
+		65B8147829B11AD600FCAEED /* doze.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = doze.caf; path = ../doze.caf; sourceTree = "<group>"; };
 		65B8147929B11AD700FCAEED /* onze.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = onze.caf; sourceTree = "<group>"; };
 		65B8147A29B11AD800FCAEED /* sete.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sete.caf; sourceTree = "<group>"; };
 		65B8147B29B11AD800FCAEED /* um.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = um.caf; sourceTree = "<group>"; };
@@ -113,6 +113,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		656D5D8629B1342100179D50 /* Sound Files */ = {
+			isa = PBXGroup;
+			children = (
+				65B8147B29B11AD800FCAEED /* um.caf */,
+				65B8147F29B11AD900FCAEED /* dois.caf */,
+				65B8148129B11ADA00FCAEED /* tres.caf */,
+				65B8148029B11AD900FCAEED /* quatro.caf */,
+				65B8147E29B11AD900FCAEED /* cinco.caf */,
+				65B8148229B11ADB00FCAEED /* seis.caf */,
+				65B8147A29B11AD800FCAEED /* sete.caf */,
+				65B8147C29B11AD800FCAEED /* oito.caf */,
+				65B8147729B11AD600FCAEED /* nove.caf */,
+				65B8147D29B11AD800FCAEED /* dez.caf */,
+				65B8147929B11AD700FCAEED /* onze.caf */,
+				65B8147829B11AD600FCAEED /* doze.caf */,
+			);
+			path = "Sound Files";
+			sourceTree = "<group>";
+		};
+		656D5D8829B1346500179D50 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				65B32BBF299AA2D9002AEED9 /* ContentView.swift */,
+				65C5AF7E299C065D002D3F06 /* RectangleButtonView.swift */,
+				6560708829A6A36900C188E5 /* InnerRectangleButtonView.swift */,
+				657A08CD29A6A8F600E5D46A /* ButtonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		65B32BB1299AA2D9002AEED9 = {
 			isa = PBXGroup;
 			children = (
@@ -136,12 +166,12 @@
 		65B32BBC299AA2D9002AEED9 /* DeepSleep */ = {
 			isa = PBXGroup;
 			children = (
-				65A8F3B629A98CA80011C5CB /* Info.plist */,
+				656D5D8829B1346500179D50 /* Views */,
+				656D5D8629B1342100179D50 /* Sound Files */,
 				65B8CC6C299E2A4100E1FB44 /* Model.swift */,
 				65B32BBD299AA2D9002AEED9 /* DeepSleepApp.swift */,
-				65B8CC66299D8F1800E1FB44 /* Sounds */,
-				65C5AF7D299C0621002D3F06 /* Views */,
 				65B32BC1299AA2DA002AEED9 /* Assets.xcassets */,
+				65A8F3B629A98CA80011C5CB /* Info.plist */,
 				65B32BC3299AA2DA002AEED9 /* Preview Content */,
 				65C1376B29A90BC800D6DD41 /* PlayAudio.swift */,
 			);
@@ -171,36 +201,6 @@
 				65B32BDA299AA2DB002AEED9 /* DeepSleepUITestsLaunchTests.swift */,
 			);
 			path = DeepSleepUITests;
-			sourceTree = "<group>";
-		};
-		65B8CC66299D8F1800E1FB44 /* Sounds */ = {
-			isa = PBXGroup;
-			children = (
-				65B8147B29B11AD800FCAEED /* um.caf */,
-				65B8147F29B11AD900FCAEED /* dois.caf */,
-				65B8148129B11ADA00FCAEED /* tres.caf */,
-				65B8148029B11AD900FCAEED /* quatro.caf */,
-				65B8147E29B11AD900FCAEED /* cinco.caf */,
-				65B8148229B11ADB00FCAEED /* seis.caf */,
-				65B8147A29B11AD800FCAEED /* sete.caf */,
-				65B8147C29B11AD800FCAEED /* oito.caf */,
-				65B8147729B11AD600FCAEED /* nove.caf */,
-				65B8147D29B11AD800FCAEED /* dez.caf */,
-				65B8147929B11AD700FCAEED /* onze.caf */,
-				65B8147829B11AD600FCAEED /* doze.caf */,
-			);
-			name = Sounds;
-			sourceTree = "<group>";
-		};
-		65C5AF7D299C0621002D3F06 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				65B32BBF299AA2D9002AEED9 /* ContentView.swift */,
-				65C5AF7E299C065D002D3F06 /* RectangleButtonView.swift */,
-				6560708829A6A36900C188E5 /* InnerRectangleButtonView.swift */,
-				657A08CD29A6A8F600E5D46A /* ButtonView.swift */,
-			);
-			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
