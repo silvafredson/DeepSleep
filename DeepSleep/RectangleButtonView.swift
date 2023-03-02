@@ -6,41 +6,40 @@
 //
 
 import SwiftUI
-import AVKit
-
 
 struct RectangleButtonView: View {
     
-    // MARK: - Porperties
-  
-    //var sound: ListItem
-    
-    var body: some View {
+    let audiosContent: Audio
+        var body: some View {
         
-        ZStack {
-            HStack {
-                Spacer()
-                Rectangle()
-                    .fill(Color("bgColor"))
-                .frame(width: 150, height: 150)
-                Spacer()
-                Rectangle()
-                    .fill(Color("bgColor"))
-                .frame(width: 150, height: 150)
-                Spacer()
-            }
-        }
-        
+        ZStack {         
+            Rectangle()
+                .fill(Color("bgColor"))
+                .frame(width: 140, height: 140)
+                .cornerRadius(10)
+                .padding(8)
+                .modifier(ShadowModifier())
+            
+            Image(audiosContent.iconName)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 80)
+        } // ZStack
     }
-    
-
 }
 
-struct PlayerButtonView_Previews: PreviewProvider {
+// MARK: - Shadow
+struct ShadowModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .shadow(color: Color("lightShadow"), radius: 8, x: -8, y: -8)
+            .shadow(color: Color("darkShadow"), radius: 8, x: 8, y: 8)
+    }
+}
+
+struct RectangleButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        RectangleButtonView()
-            //.preferredColorScheme(.dark)
+        RectangleButtonView(audiosContent: audiosData[0])
             .previewLayout(.sizeThatFits)
-            .padding()
     }
 }

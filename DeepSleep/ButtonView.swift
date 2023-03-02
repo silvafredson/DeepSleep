@@ -8,13 +8,37 @@
 import SwiftUI
 
 struct ButtonView: View {
+    
+    let audiosContent: Audio
+    @State var isPressed = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+        ZStack {
+
+            let rectangleUp = RectangleButtonView(audiosContent: audiosData[0])
+            let InnerRectangle = InnerRectangleButtonView(audiosContent: audiosData[0])
+
+            if isPressed {
+                InnerRectangle
+            } else {
+                rectangleUp
+            }
+
+//            Image(systemName: "play.circle.fill")
+//                .font(.system(size: 80))
+//                .foregroundColor(.white)
+//                .opacity(isPressed ? 0.5 : 1.0)
+        }
+//        .onTapGesture {
+//            isPressed = !isPressed
+//            withAnimation(.easeInOut(duration: 0.4)) {
+//            }
+//        }
+    } // body
 }
 
 struct ButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonView()
+        ButtonView(audiosContent: audiosData[0])
     }
 }
