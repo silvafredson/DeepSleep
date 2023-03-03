@@ -15,14 +15,18 @@ struct ContentView: View {
     let allAudios: Audio
     let player = AVPlayer()
     @State var buttonPressed = false
+    @State var isPressed = false
 
     var body: some View {
         
         NavigationView {
             ZStack {
-                Color("bgColor").ignoresSafeArea(.all)
+                (Utils.SavedColors.bgColor).ignoresSafeArea(.all)
+                
                 ScrollView(showsIndicators: false) {
+                    
                         LazyVGrid(columns: [GridItem(.flexible(), spacing: 0), GridItem(.flexible())], spacing: 20) {
+                            
                             ForEach(audiosData) { audio in
                                 
                                     Button(action: {
@@ -38,12 +42,16 @@ struct ContentView: View {
                                             player.pause()
                                         }
                                     }) {
-           
-                                        ButtonView(audiosContent: audio)
+                                        //ButtonView(audiosContent: audio)
+                                        RectangleButtonView(audiosContent: audio)
+                                        //ButtonView(audiosContent: audio)
+                                        
+        
                                     } // button
                                     .onTapGesture {
-                                        player.play() //testar
-                                       // withAnimation(.easeInOut(duration: 0.4)) { }
+                                        isPressed = !isPressed
+                                        withAnimation(.easeInOut(duration: 0.4)) {
+                                        }
                                     }
                                     .id(audio.id)
                             } // ForEach
@@ -66,9 +74,9 @@ extension UINavigationController {
 
         if let appearance = UINavigationBarAppearance().copy() as? UINavigationBarAppearance {
             appearance.configureWithOpaqueBackground()
-            appearance.backgroundColor = UIColor(named: "bgColor")
+            appearance.backgroundColor = UIColor(Utils.SavedColors.bgColor)
             appearance.titleTextAttributes = [.foregroundColor: UIColor.gray]
-            appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.black] // inútil
+            appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.green] // inútil
             appearance.shadowColor = .white
 
             UINavigationBar.appearance().standardAppearance = appearance

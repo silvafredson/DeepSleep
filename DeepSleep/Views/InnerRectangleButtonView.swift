@@ -16,7 +16,7 @@ struct InnerRectangleButtonView: View {
         ZStack {
             Spacer()
             Rectangle()
-                .fill(Color("bgColor"))
+                .fill(Utils.SavedColors.bgColor)
                 .frame(width: 140, height: 140)
                 .cornerRadius(10)
                 .padding(8)
@@ -40,10 +40,10 @@ struct InnerShadowModifier: ViewModifier {
         content
             .overlay (
                 RoundedRectangle(cornerRadius: radius)
-                    .stroke(Color ("bgColor"), lineWidth: 5)
-                    .shadow(color: Color("darkShadow"), radius: 4, x: 5, y: 5)
+                    .stroke((Utils.SavedColors.bgColor), lineWidth: 5)
+                    .shadow(color: (Utils.SavedColors.darkShadow), radius: 4, x: 5, y: 5)
                     .clipShape(RoundedRectangle(cornerRadius: radius))
-                    .shadow(color: Color("lightShadow"), radius: 4, x: -5, y: -5)
+                    .shadow(color: (Utils.SavedColors.lightShadow), radius: 4, x: -5, y: -5)
                     .clipShape(RoundedRectangle(cornerRadius: radius))
             )
     }

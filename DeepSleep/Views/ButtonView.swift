@@ -14,7 +14,8 @@ struct ButtonView: View {
     
     var body: some View {
         ZStack {
-
+            //(Utils.SavedColors.bgColor).ignoresSafeArea(.all)
+            
             let rectangleUp = RectangleButtonView(audiosContent: audiosData[0])
             let InnerRectangle = InnerRectangleButtonView(audiosContent: audiosData[0])
 
@@ -29,11 +30,11 @@ struct ButtonView: View {
 //                .foregroundColor(.white)
 //                .opacity(isPressed ? 0.5 : 1.0)
         }
-//        .onTapGesture {
-//            isPressed = !isPressed
+        .onTapGesture {
+            isPressed = !isPressed
 //            withAnimation(.easeInOut(duration: 0.4)) {
 //            }
-//        }
+        }
     } // body
 }
 

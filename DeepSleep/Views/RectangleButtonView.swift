@@ -10,20 +10,31 @@ import SwiftUI
 struct RectangleButtonView: View {
     
     let audiosContent: Audio
+    
         var body: some View {
         
         ZStack {         
             Rectangle()
-                .fill(Color("bgColor"))
+                .fill(Utils.SavedColors.bgColor)
                 .frame(width: 140, height: 140)
                 .cornerRadius(10)
                 .padding(8)
                 .modifier(ShadowModifier())
             
-            Image(audiosContent.iconName)
-                .resizable()
-                .scaledToFit()
-                .frame(width: 80)
+            VStack {
+                
+                Image(systemName: audiosContent.iconName)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 60)
+                    .foregroundColor(.gray)
+                    .padding(8)
+                
+                Text(audiosContent.title)
+                    .font(.subheadline)
+                    
+            }
+                
         } // ZStack
     }
 }
@@ -32,8 +43,8 @@ struct RectangleButtonView: View {
 struct ShadowModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
-            .shadow(color: Color("lightShadow"), radius: 8, x: -8, y: -8)
-            .shadow(color: Color("darkShadow"), radius: 8, x: 8, y: 8)
+            .shadow(color: (Utils.SavedColors.lightShadow), radius: 8, x: -8, y: -8)
+            .shadow(color: (Utils.SavedColors.darkShadow), radius: 8, x: 8, y: 8)
     }
 }
 
@@ -41,5 +52,6 @@ struct RectangleButtonView_Previews: PreviewProvider {
     static var previews: some View {
         RectangleButtonView(audiosContent: audiosData[0])
             .previewLayout(.sizeThatFits)
+            .frame(width: 140, height: 140)
     }
 }

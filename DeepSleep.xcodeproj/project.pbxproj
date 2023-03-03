@@ -21,7 +21,6 @@
 		65B32BD9299AA2DB002AEED9 /* DeepSleepUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B32BD8299AA2DB002AEED9 /* DeepSleepUITests.swift */; };
 		65B32BDB299AA2DB002AEED9 /* DeepSleepUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B32BDA299AA2DB002AEED9 /* DeepSleepUITestsLaunchTests.swift */; };
 		65B8148329B11ADB00FCAEED /* nove.caf in Resources */ = {isa = PBXBuildFile; fileRef = 65B8147729B11AD600FCAEED /* nove.caf */; };
-		65B8148429B11ADB00FCAEED /* doze.caf in Resources */ = {isa = PBXBuildFile; fileRef = 65B8147829B11AD600FCAEED /* doze.caf */; };
 		65B8148529B11ADB00FCAEED /* onze.caf in Resources */ = {isa = PBXBuildFile; fileRef = 65B8147929B11AD700FCAEED /* onze.caf */; };
 		65B8148629B11ADB00FCAEED /* sete.caf in Resources */ = {isa = PBXBuildFile; fileRef = 65B8147A29B11AD800FCAEED /* sete.caf */; };
 		65B8148729B11ADB00FCAEED /* um.caf in Resources */ = {isa = PBXBuildFile; fileRef = 65B8147B29B11AD800FCAEED /* um.caf */; };
@@ -38,6 +37,8 @@
 		65C5AF7F299C065D002D3F06 /* RectangleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C5AF7E299C065D002D3F06 /* RectangleButtonView.swift */; };
 		65C5AF80299C065D002D3F06 /* RectangleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C5AF7E299C065D002D3F06 /* RectangleButtonView.swift */; };
 		65C5AF81299C065D002D3F06 /* RectangleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C5AF7E299C065D002D3F06 /* RectangleButtonView.swift */; };
+		65D3170029B13E450035E1AF /* doze.caf in Resources */ = {isa = PBXBuildFile; fileRef = 65D316FF29B13E450035E1AF /* doze.caf */; };
+		65F8274D29B17D7F007CC823 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F8274C29B17D7F007CC823 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +73,6 @@
 		65B32BD8299AA2DB002AEED9 /* DeepSleepUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepSleepUITests.swift; sourceTree = "<group>"; };
 		65B32BDA299AA2DB002AEED9 /* DeepSleepUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepSleepUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		65B8147729B11AD600FCAEED /* nove.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = nove.caf; sourceTree = "<group>"; };
-		65B8147829B11AD600FCAEED /* doze.caf */ = {isa = PBXFileReference; lastKnownFileType = file; name = doze.caf; path = ../doze.caf; sourceTree = "<group>"; };
 		65B8147929B11AD700FCAEED /* onze.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = onze.caf; sourceTree = "<group>"; };
 		65B8147A29B11AD800FCAEED /* sete.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sete.caf; sourceTree = "<group>"; };
 		65B8147B29B11AD800FCAEED /* um.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = um.caf; sourceTree = "<group>"; };
@@ -86,6 +86,8 @@
 		65B8CC6C299E2A4100E1FB44 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		65C1376B29A90BC800D6DD41 /* PlayAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayAudio.swift; sourceTree = "<group>"; };
 		65C5AF7E299C065D002D3F06 /* RectangleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleButtonView.swift; sourceTree = "<group>"; };
+		65D316FF29B13E450035E1AF /* doze.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = doze.caf; sourceTree = "<group>"; };
+		65F8274C29B17D7F007CC823 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +129,7 @@
 				65B8147729B11AD600FCAEED /* nove.caf */,
 				65B8147D29B11AD800FCAEED /* dez.caf */,
 				65B8147929B11AD700FCAEED /* onze.caf */,
-				65B8147829B11AD600FCAEED /* doze.caf */,
+				65D316FF29B13E450035E1AF /* doze.caf */,
 			);
 			path = "Sound Files";
 			sourceTree = "<group>";
@@ -174,6 +176,7 @@
 				65A8F3B629A98CA80011C5CB /* Info.plist */,
 				65B32BC3299AA2DA002AEED9 /* Preview Content */,
 				65C1376B29A90BC800D6DD41 /* PlayAudio.swift */,
+				65F8274C29B17D7F007CC823 /* Utils.swift */,
 			);
 			path = DeepSleep;
 			sourceTree = "<group>";
@@ -314,8 +317,8 @@
 				65B8148329B11ADB00FCAEED /* nove.caf in Resources */,
 				65B8148B29B11ADB00FCAEED /* dois.caf in Resources */,
 				65B8148A29B11ADB00FCAEED /* cinco.caf in Resources */,
+				65D3170029B13E450035E1AF /* doze.caf in Resources */,
 				65B32BC5299AA2DA002AEED9 /* Preview Assets.xcassets in Resources */,
-				65B8148429B11ADB00FCAEED /* doze.caf in Resources */,
 				65B8148D29B11ADB00FCAEED /* tres.caf in Resources */,
 				65B8148829B11ADB00FCAEED /* oito.caf in Resources */,
 				65B8148629B11ADB00FCAEED /* sete.caf in Resources */,
@@ -356,6 +359,7 @@
 				6560708929A6A36900C188E5 /* InnerRectangleButtonView.swift in Sources */,
 				65C1376C29A90BC800D6DD41 /* PlayAudio.swift in Sources */,
 				657A08CE29A6A8F600E5D46A /* ButtonView.swift in Sources */,
+				65F8274D29B17D7F007CC823 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
