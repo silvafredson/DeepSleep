@@ -6,15 +6,37 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct ButtonView: View {
     
+    let player = AVPlayer()
     let audiosContent: Audio
     @State var isPressed = false
     
     var body: some View {
         ZStack {
             (Utils.SavedColors.bgColor).ignoresSafeArea(.all)
+            
+//            ForEach(audiosData) { audio in
+//                Button {
+//                    playAudio(audio: audiosContent)
+////                    guard let audioURL = audio.audioURL else { return }
+////                    let playerItem = AVPlayerItem(url: audioURL)
+////                    player.replaceCurrentItem(with: playerItem)
+//
+//                    if !isPressed {
+//                        RectangleButtonView(audiosContent: audiosData[0])
+//                        player.pause()
+//                    } else {
+//                        InnerRectangleButtonView(audiosContent: audiosData[0])
+//                        player.play()
+//                    }
+//                } label: {
+//
+//                }
+//            }
+
             
             let rectangleUp = RectangleButtonView(audiosContent: audiosData[0])
             let InnerRectangle = InnerRectangleButtonView(audiosContent: audiosData[0])
@@ -32,9 +54,10 @@ struct ButtonView: View {
                     .opacity(isPressed ? 0.5 : 1.0)
                     .padding(4)
                 
-                Text(audiosContent.title)
-                    .font(.subheadline)
-                    .opacity(isPressed ? 0.5 : 1.0)
+                Text(audiosContent.title.uppercased())
+                    .font(.system(size: 14, weight: .semibold, design: .monospaced))
+                    .bold()
+                    //.opacity(isPressed ? 0.5 : 1.0)
             }
                 
         }

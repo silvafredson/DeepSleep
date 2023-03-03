@@ -42,9 +42,9 @@ struct ContentView: View {
                                             player.pause()
                                         }
                                     }) {
-                                        //ButtonView(audiosContent: audio)
+                                        //RectangleButtonView(audiosContent: audio)
                                         ButtonView(audiosContent: audio)
-                                        //ButtonView(audiosContent: audio)
+                                        
                                         
         
                                     } // button
