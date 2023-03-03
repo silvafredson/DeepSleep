@@ -23,16 +23,14 @@ struct RectangleButtonView: View {
             
             VStack {
                 
-                Image(systemName: audiosContent.iconName)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 60)
-                    .foregroundColor(.gray)
-                    .padding(8)
+//                Image(systemName: audiosContent.iconName)
+//                    .resizable()
+//                    .scaledToFit()
+//                    .frame(width: 60)
+//                    .foregroundColor(.gray)
+//                    .padding(8)
                 
-                Text(audiosContent.title)
-                    .font(.subheadline)
-                    
+                
             }
                 
         } // ZStack

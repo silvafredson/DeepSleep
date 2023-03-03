@@ -43,16 +43,16 @@ struct ContentView: View {
                                         }
                                     }) {
                                         //ButtonView(audiosContent: audio)
-                                        RectangleButtonView(audiosContent: audio)
+                                        ButtonView(audiosContent: audio)
                                         //ButtonView(audiosContent: audio)
                                         
         
                                     } // button
-                                    .onTapGesture {
-                                        isPressed = !isPressed
-                                        withAnimation(.easeInOut(duration: 0.4)) {
-                                        }
-                                    }
+//                                    .onTapGesture {
+//                                        isPressed = !isPressed
+//                                        withAnimation(.easeInOut(duration: 0.4)) {
+//                                        }
+//                                    }
                                     .id(audio.id)
                             } // ForEach
                         } // VGrig

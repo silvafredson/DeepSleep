@@ -14,7 +14,7 @@ struct ButtonView: View {
     
     var body: some View {
         ZStack {
-            //(Utils.SavedColors.bgColor).ignoresSafeArea(.all)
+            (Utils.SavedColors.bgColor).ignoresSafeArea(.all)
             
             let rectangleUp = RectangleButtonView(audiosContent: audiosData[0])
             let InnerRectangle = InnerRectangleButtonView(audiosContent: audiosData[0])
@@ -25,15 +25,23 @@ struct ButtonView: View {
                 rectangleUp
             }
 
-//            Image(systemName: "play.circle.fill")
-//                .font(.system(size: 80))
-//                .foregroundColor(.white)
-//                .opacity(isPressed ? 0.5 : 1.0)
+            VStack {
+                Image(systemName: audiosContent.iconName)
+                    .font(.system(size: 80))
+                    .foregroundColor(.gray)
+                    .opacity(isPressed ? 0.5 : 1.0)
+                    .padding(4)
+                
+                Text(audiosContent.title)
+                    .font(.subheadline)
+                    .opacity(isPressed ? 0.5 : 1.0)
+            }
+                
         }
         .onTapGesture {
             isPressed = !isPressed
-//            withAnimation(.easeInOut(duration: 0.4)) {
-//            }
+            withAnimation(.easeInOut(duration: 0.5)) {
+            }
         }
     } // body
 }
