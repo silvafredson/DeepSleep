@@ -50,6 +50,7 @@ class AudioStore: ObservableObject {
     func startPlaying(audio: Audio) {
         do {
             let player = try AVAudioPlayer(contentsOf: audio.audioURL!)
+            player.numberOfLoops = -1
             player.play()
             if let index = audios.firstIndex(of: audio) {
                 audios[index].player = player
@@ -67,12 +68,13 @@ class AudioStore: ObservableObject {
             audios[index].isPlaying = false
         }
     }
+    
 }
 
 
 let audiosData: [Audio] = [
-    Audio(title: "Water", iconName: "hifispeaker", audioFileName: "um"),
-    Audio(title: "Windd", iconName: "wind", audioFileName: "dois"),
+    Audio(title: "Pink Noise", iconName: "hifispeaker", audioFileName: "Pink Noise"),
+    Audio(title: "White Noise", iconName: "wind", audioFileName: "White Noise"),
     Audio(title: "bla", iconName: "airpodsmax", audioFileName: "tres"),
     Audio(title: "bleeee", iconName: "headphones", audioFileName: "quatro"),
     Audio(title: "blz blz", iconName: "earpods", audioFileName: "cinco"),

@@ -41,13 +41,12 @@ struct ContentView: View {
                                         Text(audio.title.uppercased())
                                             .font(.system(size: 14, weight: .semibold, design: .monospaced))
                                             .bold()
+                                            //.foregroundColor(.black)
                                     }
                                 }
                                 .onTapGesture {
                                     audioStore.toggleIsPlaying(for: audio)
                                 }
-
-
                                 .id(audio.id)
                                 .onChange(of: audio.isPlaying) { newValue in
                                         // it Updates the display of the button when the audio playback state changes
@@ -72,7 +71,6 @@ struct ContentView: View {
 }
 
 
-
 // MARK: - Modify the Navi tab bar's color
 extension UINavigationController {
     override open func viewDidLoad() {
@@ -81,7 +79,7 @@ extension UINavigationController {
         if let appearance = UINavigationBarAppearance().copy() as? UINavigationBarAppearance {
             appearance.configureWithOpaqueBackground()
             appearance.backgroundColor = UIColor(Utils.SavedColors.bgColor)
-            appearance.titleTextAttributes = [.foregroundColor: UIColor.gray]
+            appearance.titleTextAttributes = [.foregroundColor: UIColor.gray, .font: UIFont.systemFont(ofSize: 30)]
             appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.green] // inútil
             appearance.shadowColor = .white
 

@@ -22,10 +22,10 @@ struct InnerRectangleButtonView: View {
                 .padding(8)
                 .modifier(InnerShadowModifier())
             
-            Image(audiosContent.iconName)
-                .resizable()
-                .scaledToFit()
-                .frame(width: 80)
+//            Image(audiosContent.iconName)
+//                .resizable()
+//                .scaledToFit()
+//                .frame(width: 80)
             
         } // ZStack
     }
@@ -52,6 +52,5 @@ struct InnerShadowModifier: ViewModifier {
 struct InnerRectangleButtonView_Previews: PreviewProvider {
     static var previews: some View {
         InnerRectangleButtonView(audiosContent: audiosData[0])
-            .previewLayout(.sizeThatFits)
     }
 }
