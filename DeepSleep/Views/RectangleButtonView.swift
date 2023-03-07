@@ -20,19 +20,7 @@ struct RectangleButtonView: View {
                 .cornerRadius(10)
                 .padding(8)
                 .modifier(ShadowModifier())
-            
-            VStack {
-                
-//                Image(systemName: audiosContent.iconName)
-//                    .resizable()
-//                    .scaledToFit()
-//                    .frame(width: 60)
-//                    .foregroundColor(.gray)
-//                    .padding(8)
-                
-                
-            }
-                
+
         } // ZStack
     }
 }

@@ -18,26 +18,6 @@ struct ButtonView: View {
         ZStack {
             (Utils.SavedColors.bgColor).ignoresSafeArea(.all)
             
-//            ForEach(audiosData) { audio in
-//                Button {
-//                    playAudio(audio: audiosContent)
-////                    guard let audioURL = audio.audioURL else { return }
-////                    let playerItem = AVPlayerItem(url: audioURL)
-////                    player.replaceCurrentItem(with: playerItem)
-//
-//                    if !isPressed {
-//                        RectangleButtonView(audiosContent: audiosData[0])
-//                        player.pause()
-//                    } else {
-//                        InnerRectangleButtonView(audiosContent: audiosData[0])
-//                        player.play()
-//                    }
-//                } label: {
-//
-//                }
-//            }
-
-            
             let rectangleUp = RectangleButtonView(audiosContent: audiosData[0])
             let InnerRectangle = InnerRectangleButtonView(audiosContent: audiosData[0])
 

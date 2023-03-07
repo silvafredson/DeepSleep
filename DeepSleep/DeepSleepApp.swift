@@ -11,7 +11,7 @@ import SwiftUI
 struct DeepSleepApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(allAudios: audiosData[0])
+            ContentView(audiosContent: audiosData[0])
         }
     }
 }

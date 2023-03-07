@@ -12,49 +12,52 @@ import AVFoundation
 struct ContentView: View {
     
     // MARK: - properties
-    let allAudios: Audio
+    let audiosContent: Audio
     let player = AVPlayer()
-    @State var buttonPressed = false
-    @State var isPressed = false
+    @StateObject var audioStore = AudioStore(audios: audiosData)
+    //@State var isPlaying = false
 
     var body: some View {
-        
         NavigationView {
             ZStack {
                 (Utils.SavedColors.bgColor).ignoresSafeArea(.all)
-                
                 ScrollView(showsIndicators: false) {
-                    
                         LazyVGrid(columns: [GridItem(.flexible(), spacing: 0), GridItem(.flexible())], spacing: 20) {
-                            
-                            ForEach(audiosData) { audio in
-                                
-                                    Button(action: {
-                                        guard let audioURL = audio.audioURL else { return }
-                                        let playerItem = AVPlayerItem(url: audioURL)
-                                        player.replaceCurrentItem(with: playerItem)
-                                        
-                                        
-                                            
-                                        if !buttonPressed {
-                                            player.play()
-                                        } else {
-                                            player.pause()
+                            ForEach(audioStore.audios) { audio in
+                                ZStack {
+                                    if audio.isPlaying {
+                                        InnerRectangleButtonView(audiosContent: audio)
+                                    } else {
+                                        RectangleButtonView(audiosContent: audio)
+                                    }
+
+                                    VStack {
+                                        Image(systemName: audio.iconName)
+                                            .font(.system(size: 80))
+                                            .foregroundColor(.gray)
+                                            .opacity(audio.isPlaying ? 0.5 : 1.0)
+                                            .padding(4)
+
+                                        Text(audio.title.uppercased())
+                                            .font(.system(size: 14, weight: .semibold, design: .monospaced))
+                                            .bold()
+                                    }
+                                }
+                                .onTapGesture {
+                                    audioStore.toggleIsPlaying(for: audio)
+                                }
+
+
+                                .id(audio.id)
+                                .onChange(of: audio.isPlaying) { newValue in
+                                        // it Updates the display of the button when the audio playback state changes
+                                        if !newValue {
+                                            audioStore.toggleIsPlaying(for: audio)
                                         }
-                                    }) {
-                                        //RectangleButtonView(audiosContent: audio)
-                                        ButtonView(audiosContent: audio)
-                                        
-                                        
-        
-                                    } // button
-//                                    .onTapGesture {
-//                                        isPressed = !isPressed
-//                                        withAnimation(.easeInOut(duration: 0.4)) {
-//                                        }
-//                                    }
-                                    .id(audio.id)
+                                    }
                             } // ForEach
+
+                            
                         } // VGrig
                         .padding()
                     
@@ -64,8 +67,11 @@ struct ContentView: View {
             .navigationTitle("Deep Sleep")
             .navigationBarTitleDisplayMode(.inline)
         } // Navi
-    }
+        .environmentObject(audioStore)
+    } // body
 }
+
+
 
 // MARK: - Modify the Navi tab bar's color
 extension UINavigationController {
@@ -82,13 +88,12 @@ extension UINavigationController {
             UINavigationBar.appearance().standardAppearance = appearance
             UINavigationBar.appearance().scrollEdgeAppearance = appearance
         }
-
     }
 }
 
 
 struct ContenttView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(allAudios: audiosData[0])
+        ContentView(audiosContent: audiosData[0])
     }
 }
