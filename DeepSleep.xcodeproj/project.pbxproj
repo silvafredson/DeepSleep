@@ -32,12 +32,11 @@
 		65B8148D29B11ADB00FCAEED /* tres.caf in Resources */ = {isa = PBXBuildFile; fileRef = 65B8148129B11ADA00FCAEED /* tres.caf */; };
 		65B8148E29B11ADB00FCAEED /* seis.caf in Resources */ = {isa = PBXBuildFile; fileRef = 65B8148229B11ADB00FCAEED /* seis.caf */; };
 		65B8CC6D299E2A4100E1FB44 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8CC6C299E2A4100E1FB44 /* Model.swift */; };
-		65C1376C29A90BC800D6DD41 /* PlayAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C1376B29A90BC800D6DD41 /* PlayAudio.swift */; };
-		65C1376D29A90BC800D6DD41 /* PlayAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C1376B29A90BC800D6DD41 /* PlayAudio.swift */; };
 		65C5AF7F299C065D002D3F06 /* RectangleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C5AF7E299C065D002D3F06 /* RectangleButtonView.swift */; };
 		65C5AF80299C065D002D3F06 /* RectangleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C5AF7E299C065D002D3F06 /* RectangleButtonView.swift */; };
 		65C5AF81299C065D002D3F06 /* RectangleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C5AF7E299C065D002D3F06 /* RectangleButtonView.swift */; };
 		65D3170029B13E450035E1AF /* doze.caf in Resources */ = {isa = PBXBuildFile; fileRef = 65D316FF29B13E450035E1AF /* doze.caf */; };
+		65E36CD729B784CE006D953E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E36CD629B784CE006D953E /* ViewModel.swift */; };
 		65F8274D29B17D7F007CC823 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F8274C29B17D7F007CC823 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
@@ -84,9 +83,9 @@
 		65B8148129B11ADA00FCAEED /* tres.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tres.caf; sourceTree = "<group>"; };
 		65B8148229B11ADB00FCAEED /* seis.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = seis.caf; sourceTree = "<group>"; };
 		65B8CC6C299E2A4100E1FB44 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		65C1376B29A90BC800D6DD41 /* PlayAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayAudio.swift; sourceTree = "<group>"; };
 		65C5AF7E299C065D002D3F06 /* RectangleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleButtonView.swift; sourceTree = "<group>"; };
 		65D316FF29B13E450035E1AF /* doze.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = doze.caf; sourceTree = "<group>"; };
+		65E36CD629B784CE006D953E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		65F8274C29B17D7F007CC823 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -171,11 +170,11 @@
 				656D5D8829B1346500179D50 /* Views */,
 				656D5D8629B1342100179D50 /* Sound Files */,
 				65B8CC6C299E2A4100E1FB44 /* Model.swift */,
+				65E36CD629B784CE006D953E /* ViewModel.swift */,
 				65B32BBD299AA2D9002AEED9 /* DeepSleepApp.swift */,
 				65B32BC1299AA2DA002AEED9 /* Assets.xcassets */,
 				65A8F3B629A98CA80011C5CB /* Info.plist */,
 				65B32BC3299AA2DA002AEED9 /* Preview Content */,
-				65C1376B29A90BC800D6DD41 /* PlayAudio.swift */,
 				65F8274C29B17D7F007CC823 /* Utils.swift */,
 			);
 			path = DeepSleep;
@@ -357,8 +356,8 @@
 				65B32BBE299AA2D9002AEED9 /* DeepSleepApp.swift in Sources */,
 				65C5AF7F299C065D002D3F06 /* RectangleButtonView.swift in Sources */,
 				6560708929A6A36900C188E5 /* InnerRectangleButtonView.swift in Sources */,
-				65C1376C29A90BC800D6DD41 /* PlayAudio.swift in Sources */,
 				657A08CE29A6A8F600E5D46A /* ButtonView.swift in Sources */,
+				65E36CD729B784CE006D953E /* ViewModel.swift in Sources */,
 				65F8274D29B17D7F007CC823 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,7 +370,6 @@
 				6560708A29A6A36900C188E5 /* InnerRectangleButtonView.swift in Sources */,
 				657A08CF29A6A8F600E5D46A /* ButtonView.swift in Sources */,
 				65C5AF80299C065D002D3F06 /* RectangleButtonView.swift in Sources */,
-				65C1376D29A90BC800D6DD41 /* PlayAudio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
