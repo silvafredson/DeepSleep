@@ -33,12 +33,12 @@ struct ContentView: View {
 
                                     VStack {
                                         Image(systemName: audio.iconName)
-                                            .font(.system(size: 80))
+                                            .font(.system(size: 70))
                                             .foregroundColor(.gray)
                                             .opacity(audio.isPlaying ? 0.5 : 1.0)
                                             .padding(4)
 
-                                        Text(audio.title.uppercased())
+                                        Text(audio.title)
                                             .font(.system(size: 14, weight: .semibold, design: .monospaced))
                                             .bold()
                                             //.foregroundColor(.black)

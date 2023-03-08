@@ -38,6 +38,6 @@ struct RectangleButtonView_Previews: PreviewProvider {
     static var previews: some View {
         RectangleButtonView(audiosContent: audiosData[0])
             .previewLayout(.sizeThatFits)
-            .frame(width: 140, height: 140)
+            //.frame(width: 140, height: 140)
     }
 }

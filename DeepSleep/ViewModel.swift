@@ -73,18 +73,18 @@ class AudioStore: ObservableObject {
 
 
 let audiosData: [Audio] = [
-    Audio(title: "Pink Noise", iconName: "hifispeaker", audioFileName: "Pink Noise"),
-    Audio(title: "White Noise", iconName: "wind", audioFileName: "White Noise"),
-    Audio(title: "bla", iconName: "airpodsmax", audioFileName: "tres"),
-    Audio(title: "bleeee", iconName: "headphones", audioFileName: "quatro"),
-    Audio(title: "blz blz", iconName: "earpods", audioFileName: "cinco"),
-    Audio(title: "blaz bla", iconName: "airpodspro", audioFileName: "seis"),
-    Audio(title: "hajshdasd", iconName: "airpods.gen3", audioFileName: "sete"),
-    Audio(title: "euiaosd", iconName: "beats.earphones", audioFileName: "oito"),
-    Audio(title: "uiuwioa", iconName: "beats.powerbeats3", audioFileName: "nove"),
-    Audio(title: "opasdedc", iconName: "homepodmini", audioFileName: "dez"),
-    Audio(title: "ecrvtb", iconName: "homepod", audioFileName: "onze"),
-    Audio(title: "wscfgn", iconName: "homepod", audioFileName: "doze"),
+    Audio(title: "Pink Noise", iconName: "hifispeaker", audioFileName: "Pink Noise"), // 1
+    Audio(title: "White Noise", iconName: "wind", audioFileName: "White Noise"), // 2
+    Audio(title: "Waterfall", iconName: "drop", audioFileName: "Waterfall"), // 3
+    Audio(title: "Forest River", iconName: "figure.water.fitness", audioFileName: "Forest River"), // 4
+    Audio(title: "Ocean", iconName: "water.waves", audioFileName: "Ocean"), // 5
+    Audio(title: "Running Water", iconName: "humidity", audioFileName: "Running Water"), // 6
+    Audio(title: "Airplane Cabin", iconName: "airplane", audioFileName: "Airplane Cabin"), // 7
+    Audio(title: "Rain", iconName: "cloud.bolt.rain", audioFileName: "Rain"), // 8
+    Audio(title: "uiuwioa", iconName: "beats.powerbeats3", audioFileName: "nove"), // 9
+    Audio(title: "opasdedc", iconName: "homepodmini", audioFileName: "dez"), // 10
+    Audio(title: "ecrvtb", iconName: "homepod", audioFileName: "onze"), // 11
+    Audio(title: "wscfgn", iconName: "homepod", audioFileName: "doze"), // 12
 ]
 
 
