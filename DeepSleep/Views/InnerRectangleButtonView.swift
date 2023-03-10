@@ -21,13 +21,7 @@ struct InnerRectangleButtonView: View {
                 .cornerRadius(10)
                 .padding(8)
                 .modifier(InnerShadowModifier())
-            
-//            Image(audiosContent.iconName)
-//                .resizable()
-//                .scaledToFit()
-//                .frame(width: 80)
-            
-        } // ZStack
+        } 
     }
 }
 

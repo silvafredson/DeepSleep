@@ -21,7 +21,7 @@ struct RectangleButtonView: View {
                 .padding(8)
                 .modifier(ShadowModifier())
 
-        } // ZStack
+        }
     }
 }
 
@@ -37,7 +37,5 @@ struct ShadowModifier: ViewModifier {
 struct RectangleButtonView_Previews: PreviewProvider {
     static var previews: some View {
         RectangleButtonView(audiosContent: audiosData[0])
-            .previewLayout(.sizeThatFits)
-            //.frame(width: 140, height: 140)
     }
 }

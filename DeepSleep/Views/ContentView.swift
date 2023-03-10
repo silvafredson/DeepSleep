@@ -15,7 +15,6 @@ struct ContentView: View {
     let audiosContent: Audio
     let player = AVPlayer()
     @StateObject var audioStore = AudioStore(audios: audiosData)
-    //@State var isPlaying = false
 
     var body: some View {
         NavigationView {
