@@ -40,6 +40,7 @@ struct ContentView: View {
                                         Text(audio.title)
                                             .font(.system(size: 14, weight: .bold, design: .rounded))
                                             .bold()
+                                            .foregroundColor(Color("fontColor"))
                                             .opacity(audio.isPlaying ? 0.5 : 1.0)
                                             .padding(4)
                                     }
