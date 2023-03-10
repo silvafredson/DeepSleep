@@ -20,7 +20,6 @@ struct RectangleButtonView: View {
                 .cornerRadius(10)
                 .padding(8)
                 .modifier(ShadowModifier())
-
         }
     }
 }
@@ -29,8 +28,8 @@ struct RectangleButtonView: View {
 struct ShadowModifier: ViewModifier {
     func body(content: Content) -> some View {
         content
-            .shadow(color: (Utils.SavedColors.lightShadow), radius: 8, x: -8, y: -8)
-            .shadow(color: (Utils.SavedColors.darkShadow), radius: 8, x: 8, y: 8)
+            .shadow(color: (Utils.SavedColors.lightShadow), radius: 5, x: -8, y: -8)
+            .shadow(color: (Utils.SavedColors.darkShadow), radius: 5, x:10, y: 10)
     }
 }
 

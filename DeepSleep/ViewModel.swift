@@ -33,7 +33,6 @@ class AudioStore: ObservableObject {
         }
     }
 
-
     func setIsPlaying(for audio: Audio) {
         if let index = audios.firstIndex(of: audio) {
             for i in 0..<audios.count {
@@ -70,7 +69,6 @@ class AudioStore: ObservableObject {
     }
     
 }
-
 
 let audiosData: [Audio] = [
     Audio(title: "Pink Noise", iconName: "hifispeaker", audioFileName: "Pink Noise"), // 1

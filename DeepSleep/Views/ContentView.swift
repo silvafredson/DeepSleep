@@ -32,16 +32,18 @@ struct ContentView: View {
 
                                     VStack {
                                         Image(systemName: audio.iconName)
-                                            .font(.system(size: 70))
+                                            .font(.system(size: 50))
                                             .foregroundColor(.gray)
                                             .opacity(audio.isPlaying ? 0.5 : 1.0)
                                             .padding(4)
 
                                         Text(audio.title)
-                                            .font(.system(size: 14, weight: .semibold, design: .monospaced))
+                                            .font(.system(size: 14, weight: .bold, design: .rounded))
                                             .bold()
-                                            //.foregroundColor(.black)
+                                            .opacity(audio.isPlaying ? 0.5 : 1.0)
+                                            .padding(4)
                                     }
+                                    .frame(maxHeight: 100)
                                 }
                                 .onTapGesture {
                                     audioStore.toggleIsPlaying(for: audio)
@@ -54,13 +56,9 @@ struct ContentView: View {
                                         }
                                     }
                             } // ForEach
-
-                            
                         } // VGrig
                         .padding()
-                    
-                    } // ScrollView
-                
+                    } // ScrollView                
             }// ZStack
             .navigationTitle("Deep Sleep")
             .navigationBarTitleDisplayMode(.inline)

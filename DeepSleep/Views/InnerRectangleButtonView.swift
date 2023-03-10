@@ -35,9 +35,9 @@ struct InnerShadowModifier: ViewModifier {
             .overlay (
                 RoundedRectangle(cornerRadius: radius)
                     .stroke((Utils.SavedColors.bgColor), lineWidth: 5)
-                    .shadow(color: (Utils.SavedColors.darkShadow), radius: 4, x: 5, y: 5)
+                    .shadow(color: (Utils.SavedColors.darkShadow), radius: 3, x: 5, y: 5)
                     .clipShape(RoundedRectangle(cornerRadius: radius))
-                    .shadow(color: (Utils.SavedColors.lightShadow), radius: 4, x: -5, y: -5)
+                    .shadow(color: (Utils.SavedColors.lightShadow), radius: 2, x: -4, y: -4)
                     .clipShape(RoundedRectangle(cornerRadius: radius))
             )
     }
