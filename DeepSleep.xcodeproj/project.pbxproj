@@ -484,6 +484,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DeepSleep/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Permitir o acesso à biblioteca de mídia para reproduzir músicas";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Permitir o acesso ao microfone para gravar áudio";
+				INFOPLIST_KEY_NSMotionUsageDescription = "Permitir o acesso aos sensores do dispositivo para detectar movimentos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -517,6 +520,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DeepSleep/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Permitir o acesso à biblioteca de mídia para reproduzir músicas";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Permitir o acesso ao microfone para gravar áudio";
+				INFOPLIST_KEY_NSMotionUsageDescription = "Permitir o acesso aos sensores do dispositivo para detectar movimentos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;

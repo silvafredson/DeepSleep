@@ -19,7 +19,9 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ZStack {
+                
                 (Utils.SavedColors.bgColor).ignoresSafeArea(.all)
+                
                 ScrollView(showsIndicators: false) {
                         LazyVGrid(columns: [GridItem(.flexible(), spacing: 0), GridItem(.flexible())], spacing: 20) {
                             ForEach(audioStore.audios) { audio in
@@ -59,9 +61,10 @@ struct ContentView: View {
                             } // ForEach
                         } // VGrig
                         .padding()
-                    } // ScrollView                
+                    } // ScrollView
+                
             }// ZStack
-            .navigationTitle("Deep Sleep")
+            .navigationTitle("DeepSleep")
             .navigationBarTitleDisplayMode(.inline)
         } // Navi
         .environmentObject(audioStore)
@@ -77,15 +80,20 @@ extension UINavigationController {
         if let appearance = UINavigationBarAppearance().copy() as? UINavigationBarAppearance {
             appearance.configureWithOpaqueBackground()
             appearance.backgroundColor = UIColor(Utils.SavedColors.bgColor)
-            appearance.titleTextAttributes = [.foregroundColor: UIColor.gray, .font: UIFont.systemFont(ofSize: 30)]
-            appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.green] // inútil
+            appearance.titleTextAttributes = [
+                .foregroundColor: UIColor.gray,
+                .font: UIFont.systemFont(ofSize: 30, weight: .semibold)
+            ]
+            //appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.yellow] // inútil
             appearance.shadowColor = .white
 
             UINavigationBar.appearance().standardAppearance = appearance
             UINavigationBar.appearance().scrollEdgeAppearance = appearance
         }
+            
     }
 }
+
 
 
 struct ContenttView_Previews: PreviewProvider {
