@@ -27,9 +27,13 @@ let audiosData: [Audio] = [
 class AudioStore: ObservableObject {
     @Published var audios: [Audio]
     
+    let player = AVPlayer()
+    
+    //var playerItem: AVPlayerItem!
+
+    
     init(audios: [Audio]) {
         self.audios = audios
-        
     }
     
     func toggleIsPlaying(for audio: Audio) {
@@ -65,11 +69,15 @@ class AudioStore: ObservableObject {
     
     // MARK: - Play audio Method
     func startPlaying(audio: Audio) {
+        
+        setupRemoteControl()
+        setupNowPlaying()
+        setupRemoteCommandCenter()
+        
         do {
             let player = try AVAudioPlayer(contentsOf: audio.audioURL!)
             player.numberOfLoops = -1
             player.play()
-            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)// plays audio when lock creen
             
             if let index = audios.firstIndex(of: audio) {
                 audios[index].player = player
@@ -77,14 +85,48 @@ class AudioStore: ObservableObject {
             }
         } catch {
             print("Error starting playback for audio \(audio.title): \(error.localizedDescription)")
-            print("Erro ao definir a categoria de sessão de áudio: \(error.localizedDescription)")//
+            
         }
+        //UIApplication.shared.beginReceivingRemoteControlEvents().self.becomeFirstResponder()
         
     }
     
+    func setupNowPlaying() {
+        var nowPlayingInfo = [String : Any]()
+        nowPlayingInfo[MPMediaItemPropertyTitle] = "Teste"
+        //nowPlayingInfo[MPMediaItemPropertyArtwork] = playerItem.
+        
+        MPNowPlayingInfoCenter.default().nowPlayingInfo = nowPlayingInfo
+        MPNowPlayingInfoCenter.default().playbackState = .playing
+    }
+    
+    // MARK: - play/pause lock screen button
+    func setupRemoteCommandCenter() {
+        
+        
+        let commandCenter = MPRemoteCommandCenter.shared();
+        commandCenter.playCommand.isEnabled = true
+        commandCenter.playCommand.addTarget { event in
+            self.player.play()
+            return .success
+        }
+        commandCenter.pauseCommand.isEnabled = true
+        commandCenter.pauseCommand.addTarget { event in
+            self.player.pause()
+            return .success
+        }
+    }
     
     // MARK: - testing up PLAY NOW
-    fileprivate func setupRemoteControl() {
+    func setupRemoteControl() {
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)// plays audio when lock creen
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch {
+            print("Erro setting the AVAudioSession: \(error.localizedDescription)")//
+        }
+        
         UIApplication.shared.beginReceivingRemoteControlEvents()
         
         MPRemoteCommandCenter.shared().playCommand.isEnabled = true
@@ -95,7 +137,6 @@ class AudioStore: ObservableObject {
         }
     }
     
-
     // MARK: - Stop audio
     func stopPlaying(audio: Audio) {
         if let index = audios.firstIndex(of: audio) {
@@ -105,5 +146,3 @@ class AudioStore: ObservableObject {
         }
     }
 }
-
-

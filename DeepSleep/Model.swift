@@ -16,6 +16,8 @@ struct Audio: Identifiable, Equatable {
     var isPlaying = false
     var player: AVAudioPlayer?
     
+    //var playerItem: AVPlayerItem!
+    
     init(title: String, iconName: String, audioFileName: String) {
         self.title = title
         self.iconName = iconName
@@ -26,5 +28,13 @@ struct Audio: Identifiable, Equatable {
             print("Error: Could not find audio file \(audioFileName).caf")
         }
     }
+    
+//    mutating func setUpAVPlayer() {
+//        let path = Bundle.main.path(forResource: iconName, ofType:"caf")!
+//        let url = URL(fileURLWithPath: path)
+//        playerItem = AVPlayerItem(url: url)
+//        player = AVAudioPlayer()
+//        //setupAudioSession()
+//    }
 }
 

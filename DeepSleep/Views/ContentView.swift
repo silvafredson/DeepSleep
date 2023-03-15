@@ -15,6 +15,7 @@ struct ContentView: View {
     let audiosContent: Audio
     let player = AVPlayer()
     
+    
     @StateObject var audioStore = AudioStore(audios: audiosData)
 
     var body: some View {
@@ -53,9 +54,12 @@ struct ContentView: View {
                                     //.frame(height: 30)
                                 }
                                 .onTapGesture {
-                                    audioStore.toggleIsPlaying(for: audio)
+                                    withAnimation(.easeOut(duration: 0.5)) {
+                                        
+                                        audioStore.toggleIsPlaying(for: audio)
+                                    }
                                 }
-                                .id(audio.id)
+                                //.id(audio.id)
                                 .onChange(of: audio.isPlaying) { newValue in
                                         // it Updates the display of the button when the audio playback state changes
                                         if !newValue {
@@ -71,7 +75,7 @@ struct ContentView: View {
             .navigationTitle("DeepSleep")
             .navigationBarTitleDisplayMode(.inline)
         } // Navi
-        .environmentObject(audioStore)
+        //.environmentObject(audioStore)
     } // body
 }
 

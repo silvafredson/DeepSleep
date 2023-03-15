@@ -25,8 +25,6 @@ struct InnerRectangleButtonView: View {
     }
 }
 
-
-
 struct InnerRectangleButtonView_Previews: PreviewProvider {
     static var previews: some View {
         InnerRectangleButtonView(audiosContent: audiosData[0])
