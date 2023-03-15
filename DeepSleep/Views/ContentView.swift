@@ -14,6 +14,7 @@ struct ContentView: View {
     // MARK: - properties
     let audiosContent: Audio
     let player = AVPlayer()
+    
     @StateObject var audioStore = AudioStore(audios: audiosData)
 
     var body: some View {
@@ -33,11 +34,14 @@ struct ContentView: View {
                                     }
 
                                     VStack {
-                                        Image(systemName: audio.iconName)
-                                            .font(.system(size: 50))
-                                            .foregroundColor(.gray)
+                                        Image(audio.iconName)
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 50, height: 50)
+                                            .foregroundColor(.brown)
                                             .opacity(audio.isPlaying ? 0.5 : 1.0)
-                                            .padding(4)
+                                            .padding(8)
+                                            .modifier(Utils.IconModifier())
 
                                         Text(audio.title)
                                             .font(.system(size: 14, weight: .bold, design: .rounded))
@@ -46,7 +50,7 @@ struct ContentView: View {
                                             .opacity(audio.isPlaying ? 0.5 : 1.0)
                                             .padding(4)
                                     }
-                                    .frame(maxHeight: 100)
+                                    //.frame(height: 30)
                                 }
                                 .onTapGesture {
                                     audioStore.toggleIsPlaying(for: audio)
