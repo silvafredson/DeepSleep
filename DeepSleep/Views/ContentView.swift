@@ -47,15 +47,14 @@ struct ContentView: View {
                                         Text(audio.title)
                                             .font(.system(size: 14, weight: .bold, design: .rounded))
                                             .bold()
-                                            .foregroundColor(Color("fontColor"))
+                                            .foregroundColor(Utils.SavedColors.fontColor)
                                             .opacity(audio.isPlaying ? 0.5 : 1.0)
                                             .padding(4)
                                     }
                                     //.frame(height: 30)
                                 }
                                 .onTapGesture {
-                                    withAnimation(.easeOut(duration: 0.5)) {
-                                        
+                                    withAnimation(.easeOut(duration: 0.4)) {
                                         audioStore.toggleIsPlaying(for: audio)
                                     }
                                 }
@@ -89,7 +88,7 @@ extension UINavigationController {
             appearance.configureWithOpaqueBackground()
             appearance.backgroundColor = UIColor(Utils.SavedColors.bgColor)
             appearance.titleTextAttributes = [
-                .foregroundColor: UIColor.gray,
+                .foregroundColor: UIColor(Utils.SavedColors.fontColor),
                 .font: UIFont.systemFont(ofSize: 30, weight: .semibold)
             ]
             //appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.yellow] // inútil

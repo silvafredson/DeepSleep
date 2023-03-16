@@ -16,8 +16,6 @@ struct Audio: Identifiable, Equatable {
     var isPlaying = false
     var player: AVAudioPlayer?
     
-    //var playerItem: AVPlayerItem!
-    
     init(title: String, iconName: String, audioFileName: String) {
         self.title = title
         self.iconName = iconName

@@ -16,12 +16,13 @@ let audiosData: [Audio] = [
     Audio(title: "White Noise", iconName: "White Noise", audioFileName: "White Noise"), // 4
     Audio(title: "Waterfall", iconName: "Waterfall", audioFileName: "Waterfall"), // 5
     Audio(title: "Forest River", iconName: "", audioFileName: "Forest River"), // 6
-    Audio(title: "Ocean", iconName: "", audioFileName: "Ocean"), // 7
     Audio(title: "Airplane Cabin", iconName: "", audioFileName: "Airplane Cabin"), // 8
+    Audio(title: "Fire", iconName: "Fire", audioFileName: "Fire"), // 11
+    Audio(title: "Ocean", iconName: "", audioFileName: "Ocean"), // 7
     Audio(title: "Rain", iconName: "Rain", audioFileName: "Rain"), // 9
     Audio(title: "Rain Wind", iconName: "Rain Wind", audioFileName: "Rain Wind"), // 10
-    Audio(title: "ecrvtb", iconName: "", audioFileName: "onze"), // 11
-    Audio(title: "wscfgn", iconName: "", audioFileName: "doze"), // 12
+    Audio(title: "Tornado", iconName: "Tornado", audioFileName: "Tornado"), // 12
+    Audio(title: "Wind", iconName: "Wind", audioFileName: "Wind"), // 13
 ]
 
 class AudioStore: ObservableObject {
@@ -29,9 +30,11 @@ class AudioStore: ObservableObject {
     
     let player = AVPlayer()
     
-    //var playerItem: AVPlayerItem!
-
     
+    
+    //let playerItem: AVPlayerItem!
+    
+
     init(audios: [Audio]) {
         self.audios = audios
     }
@@ -67,12 +70,18 @@ class AudioStore: ObservableObject {
         }
     }
     
-    // MARK: - Play audio Method
+    
+    
+    
+    
+    
+    
+    // MARK: - Play audio
     func startPlaying(audio: Audio) {
         
         setupRemoteControl()
-        setupNowPlaying()
-        setupRemoteCommandCenter()
+        setupNowPlaying(audio: audio)
+        setupRemoteCommandCenter(audio: audio)
         
         do {
             let player = try AVAudioPlayer(contentsOf: audio.audioURL!)
@@ -87,53 +96,69 @@ class AudioStore: ObservableObject {
             print("Error starting playback for audio \(audio.title): \(error.localizedDescription)")
             
         }
-        //UIApplication.shared.beginReceivingRemoteControlEvents().self.becomeFirstResponder()
-        
     }
     
-    func setupNowPlaying() {
+    func setupNowPlaying(audio: Audio) {
         var nowPlayingInfo = [String : Any]()
-        nowPlayingInfo[MPMediaItemPropertyTitle] = "Teste"
-        //nowPlayingInfo[MPMediaItemPropertyArtwork] = playerItem.
-        
+        nowPlayingInfo[MPMediaItemPropertyTitle] = audio.title
+       // nowPlayingInfo[MPMediaItemPropertyArtwork] = playerItem.audioMix
+
         MPNowPlayingInfoCenter.default().nowPlayingInfo = nowPlayingInfo
         MPNowPlayingInfoCenter.default().playbackState = .playing
     }
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
     // MARK: - play/pause lock screen button
-    func setupRemoteCommandCenter() {
+    func setupRemoteCommandCenter(audio: Audio) {
+        UIApplication.shared.beginReceivingRemoteControlEvents()
         
+        let commandCenter = MPRemoteCommandCenter.shared()
         
-        let commandCenter = MPRemoteCommandCenter.shared();
         commandCenter.playCommand.isEnabled = true
-        commandCenter.playCommand.addTarget { event in
+        commandCenter.playCommand.addTarget { (_)
+            -> MPRemoteCommandHandlerStatus in
+            print("Should play")
+            
             self.player.play()
-            return .success
+            
+            return.success
         }
+        
         commandCenter.pauseCommand.isEnabled = true
-        commandCenter.pauseCommand.addTarget { event in
+        commandCenter.pauseCommand.addTarget { MPRemoteCommandEvent in
+            print("Should Pause")
+            
             self.player.pause()
+            
             return .success
         }
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     // MARK: - testing up PLAY NOW
     func setupRemoteControl() {
         
         do {
-            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)// plays audio when lock creen
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)// plays audio on backgrond and lock creen
             try AVAudioSession.sharedInstance().setActive(true)
         } catch {
             print("Erro setting the AVAudioSession: \(error.localizedDescription)")//
-        }
-        
-        UIApplication.shared.beginReceivingRemoteControlEvents()
-        
-        MPRemoteCommandCenter.shared().playCommand.isEnabled = true
-        MPRemoteCommandCenter.shared().playCommand.addTarget { (_) -> MPRemoteCommandHandlerStatus in
-            print("Should play audio...")
-            
-            return .success
         }
     }
     

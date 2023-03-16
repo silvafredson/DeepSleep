@@ -12,6 +12,7 @@ struct Utils {
     
     struct SavedColors {
         static let bgColor = Color("bgColor")
+        static let fontColor = Color("fontColor")
         static let lightShadow = Color("lightShadow")
         static let darkShadow = Color("darkShadow")
     }
