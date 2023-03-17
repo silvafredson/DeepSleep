@@ -12,14 +12,15 @@
 		6510277F29C29DF10019D17C /* Fire.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6510277E29C29DF10019D17C /* Fire.caf */; };
 		6510278129C2A8130019D17C /* Tornado.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6510278029C2A8130019D17C /* Tornado.caf */; };
 		6510278329C2ADAC0019D17C /* Wind.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6510278229C2ADAC0019D17C /* Wind.caf */; };
+		6510278929C4E6760019D17C /* Uterus.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6510278829C4E6760019D17C /* Uterus.caf */; };
+		6510278B29C4F39B0019D17C /* Nature.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6510278A29C4F39B0019D17C /* Nature.caf */; };
+		6510279129C52CB20019D17C /* Airplane Cabin.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6510279029C52CB20019D17C /* Airplane Cabin.caf */; };
 		6560708929A6A36900C188E5 /* InnerRectangleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560708829A6A36900C188E5 /* InnerRectangleButtonView.swift */; };
 		65B32BBE299AA2D9002AEED9 /* DeepSleepApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B32BBD299AA2D9002AEED9 /* DeepSleepApp.swift */; };
 		65B32BC0299AA2D9002AEED9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B32BBF299AA2D9002AEED9 /* ContentView.swift */; };
 		65B32BC2299AA2DA002AEED9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65B32BC1299AA2DA002AEED9 /* Assets.xcassets */; };
 		65B32BC5299AA2DA002AEED9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65B32BC4299AA2DA002AEED9 /* Preview Assets.xcassets */; };
 		65B8CC6D299E2A4100E1FB44 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8CC6C299E2A4100E1FB44 /* Model.swift */; };
-		65BA51D629BFDB9800C77E65 /* Airplane Cabin.caf in Resources */ = {isa = PBXBuildFile; fileRef = 65BA51D529BFDB9800C77E65 /* Airplane Cabin.caf */; };
-		65BA51D829BFDBCD00C77E65 /* Nature.caf in Resources */ = {isa = PBXBuildFile; fileRef = 65BA51D729BFDBCD00C77E65 /* Nature.caf */; };
 		65C5AF7F299C065D002D3F06 /* RectangleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C5AF7E299C065D002D3F06 /* RectangleButtonView.swift */; };
 		65E36CD729B784CE006D953E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E36CD629B784CE006D953E /* ViewModel.swift */; };
 		65E36CD929B7B205006D953E /* Pink Noise.caf in Resources */ = {isa = PBXBuildFile; fileRef = 65E36CD829B7B204006D953E /* Pink Noise.caf */; };
@@ -54,6 +55,9 @@
 		6510277E29C29DF10019D17C /* Fire.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fire.caf; sourceTree = "<group>"; };
 		6510278029C2A8130019D17C /* Tornado.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tornado.caf; sourceTree = "<group>"; };
 		6510278229C2ADAC0019D17C /* Wind.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Wind.caf; sourceTree = "<group>"; };
+		6510278829C4E6760019D17C /* Uterus.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Uterus.caf; sourceTree = "<group>"; };
+		6510278A29C4F39B0019D17C /* Nature.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Nature.caf; sourceTree = "<group>"; };
+		6510279029C52CB20019D17C /* Airplane Cabin.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Airplane Cabin.caf"; sourceTree = "<group>"; };
 		6560708829A6A36900C188E5 /* InnerRectangleButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnerRectangleButtonView.swift; sourceTree = "<group>"; };
 		65A8F3B629A98CA80011C5CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		65B32BBA299AA2D9002AEED9 /* DeepSleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepSleep.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,8 +68,6 @@
 		65B32BCA299AA2DB002AEED9 /* DeepSleepTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeepSleepTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65B32BD4299AA2DB002AEED9 /* DeepSleepUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeepSleepUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65B8CC6C299E2A4100E1FB44 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		65BA51D529BFDB9800C77E65 /* Airplane Cabin.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Airplane Cabin.caf"; sourceTree = "<group>"; };
-		65BA51D729BFDBCD00C77E65 /* Nature.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Nature.caf; sourceTree = "<group>"; };
 		65C5AF7E299C065D002D3F06 /* RectangleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleButtonView.swift; sourceTree = "<group>"; };
 		65E36CD629B784CE006D953E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		65E36CD829B7B204006D953E /* Pink Noise.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pink Noise.caf"; sourceTree = "<group>"; };
@@ -105,19 +107,20 @@
 		656D5D8629B1342100179D50 /* Sound Files */ = {
 			isa = PBXGroup;
 			children = (
-				65BA51D729BFDBCD00C77E65 /* Nature.caf */,
 				65E36CE829B80A0D006D953E /* Running Water.caf */,
 				65E36CD829B7B204006D953E /* Pink Noise.caf */,
 				65E36CDA29B7B9E5006D953E /* White Noise.caf */,
 				65E36CF029B80EB8006D953E /* Waterfall.caf */,
+				6510278A29C4F39B0019D17C /* Nature.caf */,
 				6501FBCB29BBA06C00D063F9 /* Forest River.caf */,
 				65E36CE629B80821006D953E /* Ocean.caf */,
-				65BA51D529BFDB9800C77E65 /* Airplane Cabin.caf */,
+				6510279029C52CB20019D17C /* Airplane Cabin.caf */,
 				65E36CF429B8179E006D953E /* Rain.caf */,
 				6501FBC929BB9CC800D063F9 /* Rain Wind.caf */,
 				6510277E29C29DF10019D17C /* Fire.caf */,
 				6510278029C2A8130019D17C /* Tornado.caf */,
 				6510278229C2ADAC0019D17C /* Wind.caf */,
+				6510278829C4E6760019D17C /* Uterus.caf */,
 			);
 			path = "Sound Files";
 			sourceTree = "<group>";
@@ -283,7 +286,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				65E36CDB29B7B9E5006D953E /* White Noise.caf in Resources */,
+				6510278B29C4F39B0019D17C /* Nature.caf in Resources */,
 				6510278129C2A8130019D17C /* Tornado.caf in Resources */,
+				6510279129C52CB20019D17C /* Airplane Cabin.caf in Resources */,
 				6501FBCA29BB9CC800D063F9 /* Rain Wind.caf in Resources */,
 				65E36CE929B80A0D006D953E /* Running Water.caf in Resources */,
 				6510278329C2ADAC0019D17C /* Wind.caf in Resources */,
@@ -292,9 +297,8 @@
 				6501FBCC29BBA06C00D063F9 /* Forest River.caf in Resources */,
 				65E36CF529B8179E006D953E /* Rain.caf in Resources */,
 				65B32BC5299AA2DA002AEED9 /* Preview Assets.xcassets in Resources */,
+				6510278929C4E6760019D17C /* Uterus.caf in Resources */,
 				65E36CD929B7B205006D953E /* Pink Noise.caf in Resources */,
-				65BA51D629BFDB9800C77E65 /* Airplane Cabin.caf in Resources */,
-				65BA51D829BFDBCD00C77E65 /* Nature.caf in Resources */,
 				65B32BC2299AA2DA002AEED9 /* Assets.xcassets in Resources */,
 				65E36CE729B80821006D953E /* Ocean.caf in Resources */,
 			);

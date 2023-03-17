@@ -10,33 +10,33 @@ import AVFoundation
 import MediaPlayer
 
 let audiosData: [Audio] = [
-    Audio(title: "Nature", iconName: "Nature", audioFileName: "Nature"), // 1
-    Audio(title: "Running Water", iconName: "Running Water", audioFileName: "Running Water"), // 2
-    Audio(title: "Pink Noise", iconName: "Pink Noise", audioFileName: "Pink Noise"), // 3
-    Audio(title: "White Noise", iconName: "White Noise", audioFileName: "White Noise"), // 4
-    Audio(title: "Waterfall", iconName: "Waterfall", audioFileName: "Waterfall"), // 5
-    Audio(title: "Forest River", iconName: "", audioFileName: "Forest River"), // 6
-    Audio(title: "Airplane Cabin", iconName: "", audioFileName: "Airplane Cabin"), // 8
-    Audio(title: "Fire", iconName: "Fire", audioFileName: "Fire"), // 11
-    Audio(title: "Ocean", iconName: "", audioFileName: "Ocean"), // 7
-    Audio(title: "Rain", iconName: "Rain", audioFileName: "Rain"), // 9
-    Audio(title: "Rain Wind", iconName: "Rain Wind", audioFileName: "Rain Wind"), // 10
-    Audio(title: "Tornado", iconName: "Tornado", audioFileName: "Tornado"), // 12
-    Audio(title: "Wind", iconName: "Wind", audioFileName: "Wind"), // 13
+    Audio(title: "White Noise", iconName: "White Noise", audioFileName: "White Noise"), // 1
+    Audio(title: "Pink Noise", iconName: "Pink Noise", audioFileName: "Pink Noise"), // 2
+    Audio(title: "Nature", iconName: "Nature", audioFileName: "Nature"), // 3
+    Audio(title: "Running Water", iconName: "Running Water", audioFileName: "Running Water"), // 4
+    Audio(title: "Fire", iconName: "Fire", audioFileName: "Fire"), // 5
+    Audio(title: "Airplane Cabin", iconName: "Airplane Cabin", audioFileName: "Airplane Cabin"), // 6
+    Audio(title: "Rain", iconName: "Rain", audioFileName: "Rain"), // 11
+    Audio(title: "Waterfall", iconName: "Waterfall", audioFileName: "Waterfall"), // 7
+    Audio(title: "Uterus", iconName: "Heart", audioFileName: "Uterus"), // 8
+    Audio(title: "Forest River", iconName: "Forest River", audioFileName: "Forest River"), // 9
+    Audio(title: "Ocean", iconName: "Ocean", audioFileName: "Ocean"), // 10
+    Audio(title: "Rain Wind", iconName: "Rain Wind", audioFileName: "Rain Wind"), // 12
+    Audio(title: "Tornado", iconName: "Tornado", audioFileName: "Tornado"), // 13
+    Audio(title: "Wind", iconName: "Wind", audioFileName: "Wind"), // 14
 ]
 
 class AudioStore: ObservableObject {
     @Published var audios: [Audio]
     
-    let player = AVPlayer()
+    var player = AVAudioPlayer()
+    var playerItem: AVPlayerItem!
     
-    
-    
-    //let playerItem: AVPlayerItem!
     
 
     init(audios: [Audio]) {
         self.audios = audios
+        
     }
     
     func toggleIsPlaying(for audio: Audio) {
@@ -72,16 +72,36 @@ class AudioStore: ObservableObject {
     
     
     
-    
+//    func playSound(audioFileName: String) {
+//        let url = Bundle.main.url(forResource: audioFileName, withExtension: "caf")
+//        let url = URL(fileURLWithPath: url)
+//        playerItem = AVPlayerItem(url: url)
+//        player = AVPlayer(playerItem: playerItem)
+//
+//        guard url != nil else {
+//            return
+//        }
+//
+//        do {
+//            player = try AVPlayer(contentsOf: url!)
+//            player?.play()
+//        } catch {
+//            print("\(error)")
+//        }
+//    }
     
     
     
     // MARK: - Play audio
     func startPlaying(audio: Audio) {
         
-        setupRemoteControl()
-        setupNowPlaying(audio: audio)
-        setupRemoteCommandCenter(audio: audio)
+        setupRemoteControl(for: audio)
+        setupNowPlaying(for: audio)
+        setupRemoteCommandCenter(for: audio)
+        
+        
+        
+        //setUpAVPlayer(audio: audio)
         
         do {
             let player = try AVAudioPlayer(contentsOf: audio.audioURL!)
@@ -98,7 +118,7 @@ class AudioStore: ObservableObject {
         }
     }
     
-    func setupNowPlaying(audio: Audio) {
+    func setupNowPlaying(for audio: Audio) {
         var nowPlayingInfo = [String : Any]()
         nowPlayingInfo[MPMediaItemPropertyTitle] = audio.title
        // nowPlayingInfo[MPMediaItemPropertyArtwork] = playerItem.audioMix
@@ -113,33 +133,37 @@ class AudioStore: ObservableObject {
     
     
     
-    
-    
-    
     // MARK: - play/pause lock screen button
-    func setupRemoteCommandCenter(audio: Audio) {
+    func setupRemoteCommandCenter(for audio: Audio) {
         UIApplication.shared.beginReceivingRemoteControlEvents()
         
-        let commandCenter = MPRemoteCommandCenter.shared()
+            let commandCenter = MPRemoteCommandCenter.shared()
+            commandCenter.playCommand.isEnabled = true
         
-        commandCenter.playCommand.isEnabled = true
-        commandCenter.playCommand.addTarget { (_)
+            commandCenter.playCommand.addTarget { (_)
             -> MPRemoteCommandHandlerStatus in
             print("Should play")
-            
-            self.player.play()
-            
+                
+                    //let player = try AVAudioPlayer(contentsOf: audio.audioURL!)
+                    
+                    self.player.play()
+                    
+                
             return.success
-        }
-        
-        commandCenter.pauseCommand.isEnabled = true
-        commandCenter.pauseCommand.addTarget { MPRemoteCommandEvent in
-            print("Should Pause")
+            }
             
-            self.player.pause()
-            
-            return .success
-        }
+            commandCenter.pauseCommand.isEnabled = true
+            commandCenter.pauseCommand.addTarget { MPRemoteCommandEvent in
+                print("Should Pause")
+                
+               
+                    //let player = try AVAudioPlayer(contentsOf: audio.audioURL!)
+                    
+                    self.player.pause()
+                    
+               
+            return.success
+            }
     }
     
     
@@ -148,11 +172,8 @@ class AudioStore: ObservableObject {
     
     
     
-    
-    
-    
     // MARK: - testing up PLAY NOW
-    func setupRemoteControl() {
+    func setupRemoteControl(for audio: Audio) {
         
         do {
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)// plays audio on backgrond and lock creen

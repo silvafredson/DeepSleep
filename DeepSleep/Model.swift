@@ -16,23 +16,42 @@ struct Audio: Identifiable, Equatable {
     var isPlaying = false
     var player: AVAudioPlayer?
     
+    
     init(title: String, iconName: String, audioFileName: String) {
         self.title = title
         self.iconName = iconName
+        
         if let fileURL = Bundle.main.url(forResource: audioFileName, withExtension: "caf") {
             self.audioURL = fileURL
         } else {
             self.audioURL = nil
             print("Error: Could not find audio file \(audioFileName).caf")
         }
+        
+        
+        
+
+        
+        
+        
+//        func setUpAVPlayer(audio: Audio) {
+//            let fileURL = Bundle.main.path(forResource: audioFileName, ofType:"caf")!
+//            let audioURL = URL(fileURLWithPath: fileURL)
+//            playerItem = AVPlayerItem(url: audioURL)
+//            player = AVAudioPlayer()
+//            //setupAudioSession()
+//        }
+        
     }
     
 //    mutating func setUpAVPlayer() {
-//        let path = Bundle.main.path(forResource: iconName, ofType:"caf")!
-//        let url = URL(fileURLWithPath: path)
-//        playerItem = AVPlayerItem(url: url)
+//        let fileURL = Bundle.main.path(forResource: iconName, ofType:"caf")!
+//        let audioURL = URL(fileURLWithPath: fileURL)
+//        playerItem = AVPlayerItem(url: audioURL)
 //        player = AVAudioPlayer()
 //        //setupAudioSession()
 //    }
+    
 }
+
 

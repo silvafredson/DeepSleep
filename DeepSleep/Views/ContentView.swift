@@ -13,19 +13,17 @@ struct ContentView: View {
     
     // MARK: - properties
     let audiosContent: Audio
-    let player = AVPlayer()
-    
-    
     @StateObject var audioStore = AudioStore(audios: audiosData)
-
+    
     var body: some View {
+        
         NavigationView {
             ZStack {
                 
                 (Utils.SavedColors.bgColor).ignoresSafeArea(.all)
                 
                 ScrollView(showsIndicators: false) {
-                        LazyVGrid(columns: [GridItem(.flexible(), spacing: 0), GridItem(.flexible())], spacing: 20) {
+                    LazyVGrid(columns: [GridItem(.flexible(), spacing: 0), GridItem(.flexible())], spacing: 20) {
                             ForEach(audioStore.audios) { audio in
                                 ZStack {
                                     if audio.isPlaying {
@@ -51,7 +49,7 @@ struct ContentView: View {
                                             .opacity(audio.isPlaying ? 0.5 : 1.0)
                                             .padding(4)
                                     }
-                                    //.frame(height: 30)
+                                    
                                 }
                                 .onTapGesture {
                                     withAnimation(.easeOut(duration: 0.4)) {
@@ -78,7 +76,6 @@ struct ContentView: View {
     } // body
 }
 
-
 // MARK: - Modify the Navi tab bar's color
 extension UINavigationController {
     override open func viewDidLoad() {
@@ -97,11 +94,8 @@ extension UINavigationController {
             UINavigationBar.appearance().standardAppearance = appearance
             UINavigationBar.appearance().scrollEdgeAppearance = appearance
         }
-            
     }
 }
-
-
 
 struct ContenttView_Previews: PreviewProvider {
     static var previews: some View {
