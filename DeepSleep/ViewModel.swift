@@ -16,11 +16,11 @@ let audiosData: [Audio] = [
     Audio(title: "Running Water", iconName: "Running Water", audioFileName: "Running Water"), // 4
     Audio(title: "Fire", iconName: "Fire", audioFileName: "Fire"), // 5
     Audio(title: "Airplane Cabin", iconName: "Airplane Cabin", audioFileName: "Airplane Cabin"), // 6
-    Audio(title: "Rain", iconName: "Rain", audioFileName: "Rain"), // 11
-    Audio(title: "Waterfall", iconName: "Waterfall", audioFileName: "Waterfall"), // 7
-    Audio(title: "Uterus", iconName: "Heart", audioFileName: "Uterus"), // 8
-    Audio(title: "Forest River", iconName: "Forest River", audioFileName: "Forest River"), // 9
-    Audio(title: "Ocean", iconName: "Ocean", audioFileName: "Ocean"), // 10
+    Audio(title: "Rain", iconName: "Rain", audioFileName: "Rain"), // 7
+    Audio(title: "Waterfall", iconName: "Waterfall", audioFileName: "Waterfall"), // 8
+    Audio(title: "Uterus", iconName: "Heart", audioFileName: "Uterus"), // 9
+    Audio(title: "Forest River", iconName: "Forest River", audioFileName: "Forest River"), // 10
+    Audio(title: "Ocean", iconName: "Ocean", audioFileName: "Ocean"), // 11
     Audio(title: "Rain Wind", iconName: "Rain Wind", audioFileName: "Rain Wind"), // 12
     Audio(title: "Tornado", iconName: "Tornado", audioFileName: "Tornado"), // 13
     Audio(title: "Wind", iconName: "Wind", audioFileName: "Wind"), // 14
@@ -30,9 +30,7 @@ class AudioStore: ObservableObject {
     @Published var audios: [Audio]
     
     var player = AVAudioPlayer()
-    var playerItem: AVPlayerItem!
-    
-    
+    //var playerItem: AVPlayerItem!
 
     init(audios: [Audio]) {
         self.audios = audios
@@ -120,8 +118,9 @@ class AudioStore: ObservableObject {
     
     func setupNowPlaying(for audio: Audio) {
         var nowPlayingInfo = [String : Any]()
+        
         nowPlayingInfo[MPMediaItemPropertyTitle] = audio.title
-       // nowPlayingInfo[MPMediaItemPropertyArtwork] = playerItem.audioMix
+        //nowPlayingInfo[MPMediaItemPropertyArtwork] = audio.iconName
 
         MPNowPlayingInfoCenter.default().nowPlayingInfo = nowPlayingInfo
         MPNowPlayingInfoCenter.default().playbackState = .playing
@@ -139,30 +138,24 @@ class AudioStore: ObservableObject {
         
             let commandCenter = MPRemoteCommandCenter.shared()
             commandCenter.playCommand.isEnabled = true
-        
-            commandCenter.playCommand.addTarget { (_)
-            -> MPRemoteCommandHandlerStatus in
-            print("Should play")
+            commandCenter.playCommand.addTarget { (_) -> MPRemoteCommandHandlerStatus in
+                    print("Should play")
                 
                     //let player = try AVAudioPlayer(contentsOf: audio.audioURL!)
                     
                     self.player.play()
-                    
-                
-            return.success
+                    return.success
             }
             
             commandCenter.pauseCommand.isEnabled = true
-            commandCenter.pauseCommand.addTarget { MPRemoteCommandEvent in
-                print("Should Pause")
+            commandCenter.pauseCommand.addTarget { (_) ->  MPRemoteCommandHandlerStatus in
+                    print("Should Pause")
                 
                
                     //let player = try AVAudioPlayer(contentsOf: audio.audioURL!)
                     
                     self.player.pause()
-                    
-               
-            return.success
+                    return.success
             }
     }
     
@@ -175,10 +168,21 @@ class AudioStore: ObservableObject {
     // MARK: - testing up PLAY NOW
     func setupRemoteControl(for audio: Audio) {
         
+        
         do {
-            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)// plays audio on backgrond and lock creen
+            //try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)// plays audio on backgrond and lock creen
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback, options: [])
             try AVAudioSession.sharedInstance().setActive(true)
-        } catch {
+            
+            do {
+               try AVAudioSession.sharedInstance().setActive(true)
+                       print("AVAudioSession is Active")
+               } catch let error as NSError {
+                           print(error.localizedDescription)
+
+               }
+            
+        } catch let error {
             print("Erro setting the AVAudioSession: \(error.localizedDescription)")//
         }
     }

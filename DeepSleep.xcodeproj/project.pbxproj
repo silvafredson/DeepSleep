@@ -12,7 +12,6 @@
 		6510277F29C29DF10019D17C /* Fire.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6510277E29C29DF10019D17C /* Fire.caf */; };
 		6510278129C2A8130019D17C /* Tornado.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6510278029C2A8130019D17C /* Tornado.caf */; };
 		6510278329C2ADAC0019D17C /* Wind.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6510278229C2ADAC0019D17C /* Wind.caf */; };
-		6510278929C4E6760019D17C /* Uterus.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6510278829C4E6760019D17C /* Uterus.caf */; };
 		6510278B29C4F39B0019D17C /* Nature.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6510278A29C4F39B0019D17C /* Nature.caf */; };
 		6510279129C52CB20019D17C /* Airplane Cabin.caf in Resources */ = {isa = PBXBuildFile; fileRef = 6510279029C52CB20019D17C /* Airplane Cabin.caf */; };
 		6560708929A6A36900C188E5 /* InnerRectangleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560708829A6A36900C188E5 /* InnerRectangleButtonView.swift */; };
@@ -20,6 +19,7 @@
 		65B32BC0299AA2D9002AEED9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B32BBF299AA2D9002AEED9 /* ContentView.swift */; };
 		65B32BC2299AA2DA002AEED9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65B32BC1299AA2DA002AEED9 /* Assets.xcassets */; };
 		65B32BC5299AA2DA002AEED9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65B32BC4299AA2DA002AEED9 /* Preview Assets.xcassets */; };
+		65B5458829C7DFD60057EF3D /* Uterus.caf in Resources */ = {isa = PBXBuildFile; fileRef = 65B5458729C7DFD60057EF3D /* Uterus.caf */; };
 		65B8CC6D299E2A4100E1FB44 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8CC6C299E2A4100E1FB44 /* Model.swift */; };
 		65C5AF7F299C065D002D3F06 /* RectangleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C5AF7E299C065D002D3F06 /* RectangleButtonView.swift */; };
 		65E36CD729B784CE006D953E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E36CD629B784CE006D953E /* ViewModel.swift */; };
@@ -55,7 +55,6 @@
 		6510277E29C29DF10019D17C /* Fire.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fire.caf; sourceTree = "<group>"; };
 		6510278029C2A8130019D17C /* Tornado.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tornado.caf; sourceTree = "<group>"; };
 		6510278229C2ADAC0019D17C /* Wind.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Wind.caf; sourceTree = "<group>"; };
-		6510278829C4E6760019D17C /* Uterus.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Uterus.caf; sourceTree = "<group>"; };
 		6510278A29C4F39B0019D17C /* Nature.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Nature.caf; sourceTree = "<group>"; };
 		6510279029C52CB20019D17C /* Airplane Cabin.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Airplane Cabin.caf"; sourceTree = "<group>"; };
 		6560708829A6A36900C188E5 /* InnerRectangleButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnerRectangleButtonView.swift; sourceTree = "<group>"; };
@@ -67,6 +66,7 @@
 		65B32BC4299AA2DA002AEED9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		65B32BCA299AA2DB002AEED9 /* DeepSleepTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeepSleepTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65B32BD4299AA2DB002AEED9 /* DeepSleepUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeepSleepUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65B5458729C7DFD60057EF3D /* Uterus.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Uterus.caf; sourceTree = "<group>"; };
 		65B8CC6C299E2A4100E1FB44 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		65C5AF7E299C065D002D3F06 /* RectangleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleButtonView.swift; sourceTree = "<group>"; };
 		65E36CD629B784CE006D953E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
@@ -120,7 +120,7 @@
 				6510277E29C29DF10019D17C /* Fire.caf */,
 				6510278029C2A8130019D17C /* Tornado.caf */,
 				6510278229C2ADAC0019D17C /* Wind.caf */,
-				6510278829C4E6760019D17C /* Uterus.caf */,
+				65B5458729C7DFD60057EF3D /* Uterus.caf */,
 			);
 			path = "Sound Files";
 			sourceTree = "<group>";
@@ -295,9 +295,9 @@
 				65E36CF129B80EB8006D953E /* Waterfall.caf in Resources */,
 				6510277F29C29DF10019D17C /* Fire.caf in Resources */,
 				6501FBCC29BBA06C00D063F9 /* Forest River.caf in Resources */,
+				65B5458829C7DFD60057EF3D /* Uterus.caf in Resources */,
 				65E36CF529B8179E006D953E /* Rain.caf in Resources */,
 				65B32BC5299AA2DA002AEED9 /* Preview Assets.xcassets in Resources */,
-				6510278929C4E6760019D17C /* Uterus.caf in Resources */,
 				65E36CD929B7B205006D953E /* Pink Noise.caf in Resources */,
 				65B32BC2299AA2DA002AEED9 /* Assets.xcassets in Resources */,
 				65E36CE729B80821006D953E /* Ocean.caf in Resources */,
@@ -415,7 +415,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -469,7 +469,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -498,7 +498,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -511,7 +511,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -534,7 +534,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -547,7 +547,7 @@
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

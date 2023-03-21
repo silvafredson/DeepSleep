@@ -31,13 +31,11 @@ struct ContentView: View {
                                     } else {
                                         RectangleButtonView(audiosContent: audio)
                                     }
-
                                     VStack {
                                         Image(audio.iconName)
                                             .resizable()
                                             .scaledToFit()
                                             .frame(width: 50, height: 50)
-                                            .foregroundColor(.brown)
                                             .opacity(audio.isPlaying ? 0.5 : 1.0)
                                             .padding(8)
                                             .modifier(Utils.IconModifier())
@@ -49,14 +47,12 @@ struct ContentView: View {
                                             .opacity(audio.isPlaying ? 0.5 : 1.0)
                                             .padding(4)
                                     }
-                                    
                                 }
                                 .onTapGesture {
                                     withAnimation(.easeOut(duration: 0.4)) {
                                         audioStore.toggleIsPlaying(for: audio)
                                     }
                                 }
-                                //.id(audio.id)
                                 .onChange(of: audio.isPlaying) { newValue in
                                         // it Updates the display of the button when the audio playback state changes
                                         if !newValue {
@@ -67,12 +63,10 @@ struct ContentView: View {
                         } // VGrig
                         .padding()
                     } // ScrollView
-                
             }// ZStack
             .navigationTitle("DeepSleep")
             .navigationBarTitleDisplayMode(.inline)
         } // Navi
-        //.environmentObject(audioStore)
     } // body
 }
 
@@ -90,6 +84,7 @@ extension UINavigationController {
             ]
             //appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.yellow] // inútil
             appearance.shadowColor = .white
+            //appearance.shadowColor.foregroundColor = UIColor(Utils.SavedColors.lightShadow)
 
             UINavigationBar.appearance().standardAppearance = appearance
             UINavigationBar.appearance().scrollEdgeAppearance = appearance
