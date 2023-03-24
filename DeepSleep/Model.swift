@@ -27,31 +27,5 @@ struct Audio: Identifiable, Equatable {
             self.audioURL = nil
             print("Error: Could not find audio file \(audioFileName).caf")
         }
-        
-        
-        
-
-        
-        
-        
-//        func setUpAVPlayer(audio: Audio) {
-//            let fileURL = Bundle.main.path(forResource: audioFileName, ofType:"caf")!
-//            let audioURL = URL(fileURLWithPath: fileURL)
-//            playerItem = AVPlayerItem(url: audioURL)
-//            player = AVAudioPlayer()
-//            //setupAudioSession()
-//        }
-        
     }
-    
-//    mutating func setUpAVPlayer() {
-//        let fileURL = Bundle.main.path(forResource: iconName, ofType:"caf")!
-//        let audioURL = URL(fileURLWithPath: fileURL)
-//        playerItem = AVPlayerItem(url: audioURL)
-//        player = AVAudioPlayer()
-//        //setupAudioSession()
-//    }
-    
 }
-
-

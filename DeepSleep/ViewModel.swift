@@ -27,14 +27,12 @@ let audiosData: [Audio] = [
 ]
 
 class AudioStore: ObservableObject {
-    @Published var audios: [Audio]
     
+    @Published var audios: [Audio]
     var player = AVAudioPlayer()
-    //var playerItem: AVPlayerItem!
 
     init(audios: [Audio]) {
         self.audios = audios
-        
     }
     
     func toggleIsPlaying(for audio: Audio) {
@@ -68,37 +66,12 @@ class AudioStore: ObservableObject {
         }
     }
     
-    
-    
-//    func playSound(audioFileName: String) {
-//        let url = Bundle.main.url(forResource: audioFileName, withExtension: "caf")
-//        let url = URL(fileURLWithPath: url)
-//        playerItem = AVPlayerItem(url: url)
-//        player = AVPlayer(playerItem: playerItem)
-//
-//        guard url != nil else {
-//            return
-//        }
-//
-//        do {
-//            player = try AVPlayer(contentsOf: url!)
-//            player?.play()
-//        } catch {
-//            print("\(error)")
-//        }
-//    }
-    
-    
-    
     // MARK: - Play audio
     func startPlaying(audio: Audio) {
         
         setupRemoteControl(for: audio)
         setupNowPlaying(for: audio)
         setupRemoteCommandCenter(for: audio)
-        
-        
-        
         //setUpAVPlayer(audio: audio)
         
         do {
@@ -120,17 +93,10 @@ class AudioStore: ObservableObject {
         var nowPlayingInfo = [String : Any]()
         
         nowPlayingInfo[MPMediaItemPropertyTitle] = audio.title
-        //nowPlayingInfo[MPMediaItemPropertyArtwork] = audio.iconName
 
         MPNowPlayingInfoCenter.default().nowPlayingInfo = nowPlayingInfo
         MPNowPlayingInfoCenter.default().playbackState = .playing
     }
-    
-    
-    
-    
-    
-    
     
     // MARK: - play/pause lock screen button
     func setupRemoteCommandCenter(for audio: Audio) {
@@ -151,19 +117,12 @@ class AudioStore: ObservableObject {
             commandCenter.pauseCommand.addTarget { (_) ->  MPRemoteCommandHandlerStatus in
                     print("Should Pause")
                 
-               
                     //let player = try AVAudioPlayer(contentsOf: audio.audioURL!)
                     
                     self.player.pause()
                     return.success
             }
     }
-    
-    
-    
-    
-    
-    
     
     // MARK: - testing up PLAY NOW
     func setupRemoteControl(for audio: Audio) {

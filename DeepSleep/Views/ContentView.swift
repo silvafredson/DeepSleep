@@ -19,9 +19,7 @@ struct ContentView: View {
         
         NavigationView {
             ZStack {
-                
                 (Utils.SavedColors.bgColor).ignoresSafeArea(.all)
-                
                 ScrollView(showsIndicators: false) {
                     LazyVGrid(columns: [GridItem(.flexible(), spacing: 0), GridItem(.flexible())], spacing: 20) {
                             ForEach(audioStore.audios) { audio in
