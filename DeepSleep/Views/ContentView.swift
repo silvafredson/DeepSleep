@@ -73,20 +73,17 @@ extension UINavigationController {
     override open func viewDidLoad() {
         super.viewDidLoad()
 
-        if let appearance = UINavigationBarAppearance().copy() as? UINavigationBarAppearance {
+        let appearance = UINavigationBarAppearance()
             appearance.configureWithOpaqueBackground()
             appearance.backgroundColor = UIColor(Utils.SavedColors.bgColor)
             appearance.titleTextAttributes = [
                 .foregroundColor: UIColor(Utils.SavedColors.fontColor),
                 .font: UIFont.systemFont(ofSize: 30, weight: .semibold)
             ]
-            //appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.yellow] // inútil
             appearance.shadowColor = .white
-            //appearance.shadowColor.foregroundColor = UIColor(Utils.SavedColors.lightShadow)
 
             UINavigationBar.appearance().standardAppearance = appearance
             UINavigationBar.appearance().scrollEdgeAppearance = appearance
-        }
     }
 }
 

@@ -9,3 +9,8 @@ This project borned with my daugther's birth, We took a deep dive into motherhoo
 
 <br>
 So I started the project using the CBL - Challenger Based Learning framework that guided me to this solution, a simple App with high quality relaxing sounds to help babies sleep better.
+
+<br>
+
+* MVVM (Model - View - ViewModel) Architecture<br>
+* Composing Views
