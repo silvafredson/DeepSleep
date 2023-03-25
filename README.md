@@ -12,5 +12,10 @@ So I started the project using the CBL - Challenger Based Learning framework tha
 
 <br>
 
+* Swift
+* SwiftUI
+* UIKit
+* AVFoundation
+* MediaPlayer
 * MVVM (Model - View - ViewModel) Architecture<br>
 * Composing Views
