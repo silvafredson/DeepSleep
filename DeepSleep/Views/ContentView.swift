@@ -13,7 +13,7 @@ struct ContentView: View {
     
     // MARK: - properties
     let audiosContent: Audio
-    @StateObject var audioStore = AudioStore(audios: audiosData)
+    @StateObject var audioStore = AudioStoreViewModel(audios: audiosData)
     
     var body: some View {
         

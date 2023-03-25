@@ -30,7 +30,7 @@ struct Utils {
         func body(content: Content) -> some View {
             content
                 //.shadow(color: (Utils.SavedColors.lightShadow), radius: 5, x: -8, y: -8)
-                .shadow(color: (Utils.SavedColors.darkShadow), radius: 6, x:2, y: 2)
+                .shadow(color: (Utils.SavedColors.darkShadow), radius: 5, x:8, y: 4)
         }
     }
     

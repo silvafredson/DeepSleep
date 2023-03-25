@@ -26,7 +26,7 @@ let audiosData: [Audio] = [
     Audio(title: "Wind", iconName: "Wind", audioFileName: "Wind"), // 14
 ]
 
-class AudioStore: ObservableObject {
+class AudioStoreViewModel: ObservableObject {
     
     @Published var audios: [Audio]
     var player = AVAudioPlayer()
