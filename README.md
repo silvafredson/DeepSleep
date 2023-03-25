@@ -5,9 +5,12 @@
 
 DeepSleep is an iOS Application bilt in Swift language em SwiftUI framework.
 
+<br>
+ <!--⚠️ Click the volume icon in the top right corner of the video to hear the sound ⚠️-->
 
+<!--https://user-images.githubusercontent.com/92945868/227723314-0b2d1205-a893-45cc-9488-839249fee278.mp4-->
 
-https://user-images.githubusercontent.com/92945868/227723314-0b2d1205-a893-45cc-9488-839249fee278.mp4
+![Screenshot 2023-03-25 at 11 25 24](https://user-images.githubusercontent.com/92945868/227724542-55a406d7-078e-43ad-bd29-437c804b29bb.png)
 
 <br>
 
