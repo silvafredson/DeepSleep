@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RectangleButtonView: View {
     
-    let audiosContent: Audio
+    //let audiosContent: Audio
     
         var body: some View {
         
@@ -26,6 +26,6 @@ struct RectangleButtonView: View {
 
 struct RectangleButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        RectangleButtonView(audiosContent: audiosData[0])
+        RectangleButtonView()
     }
 }
