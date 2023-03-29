@@ -14,10 +14,7 @@ DeepSleep is an iOS Application bilt in Swift language em SwiftUI framework.
 
 <br>
 
-This project borned with my daugther's birth, We took a deep dive into motherhood/fatherhood and we come across on of the most common issues, the baby's sleep but many of ours friends faced it, and I then thought, how can I bild something that can help them? 
-
-<br>
-So I started the project using the CBL - Challenger Based Learning framework that guided me to this solution, a simple App with high quality relaxing sounds to help babies sleep better.
+This project borned with my daugther's birth, We took a deep dive into fatherhood/motherhood and we come across on of the most common issue, the baby's sleep, I was graced with a baby who sleeps the whole night but during the day she had a lot of difficulty, through a research I did I saw that the vast majority of parents suffer from this issue of irregular sleep in their babies, and I then thought, how can I bild something that can help them? So I started the project using the CBL - Challenger Based Learning framework that guided me to this solution, a simple App with high quality relaxing sounds to help babies sleep better.
 
 <br>
 
@@ -26,5 +23,5 @@ So I started the project using the CBL - Challenger Based Learning framework tha
 * UIKit
 * AVFoundation
 * MediaPlayer
-* MVVM (Model - View - ViewModel) Architecture<br>
+* MVVM (Model - View - ViewModel) Architecture
 * Composing Views
