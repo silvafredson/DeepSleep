@@ -12,8 +12,8 @@ import AVFoundation
 struct ContentView: View {
     
     // MARK: - properties
-    let audiosContent: Audio
-    @StateObject var audioStore = AudioStoreViewModel(audios: audiosData)
+    //let audiosContent: Audio
+    @StateObject var audioStored = AudioStoreViewModel(audios: audiosData)
     
     var body: some View {
         
@@ -22,12 +22,12 @@ struct ContentView: View {
                 (Utils.SavedColors.bgColor).ignoresSafeArea(.all)
                 ScrollView(showsIndicators: false) {
                     LazyVGrid(columns: [GridItem(.flexible(), spacing: 0), GridItem(.flexible())], spacing: 20) {
-                            ForEach(audioStore.audios) { audio in
+                            ForEach(audioStored.audios) { audio in
                                 ZStack {
                                     if audio.isPlaying {
-                                        InnerRectangleButtonView(audiosContent: audio)
+                                        InnerRectangleButtonView()
                                     } else {
-                                        RectangleButtonView(audiosContent: audio)
+                                        RectangleButtonView()
                                     }
                                     VStack {
                                         Image(audio.iconName)
@@ -48,15 +48,15 @@ struct ContentView: View {
                                 }
                                 .onTapGesture {
                                     withAnimation(.easeOut(duration: 0.4)) {
-                                        audioStore.toggleIsPlaying(for: audio)
+                                        audioStored.toggleIsPlaying(for: audio)
                                     }
                                 }
                                 .onChange(of: audio.isPlaying) { newValue in
-                                        // it Updates the display of the button when the audio playback state changes
-                                        if !newValue {
-                                            audioStore.toggleIsPlaying(for: audio)
-                                        }
+                                    // it Updates the display of the button when the audio playback state changes
+                                    if !newValue {
+                                        audioStored.toggleIsPlaying(for: audio)
                                     }
+                                }
                             } // ForEach
                         } // VGrig
                         .padding()
@@ -89,6 +89,6 @@ extension UINavigationController {
 
 struct ContenttView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(audiosContent: audiosData[0])
+        ContentView()
     }
 }
