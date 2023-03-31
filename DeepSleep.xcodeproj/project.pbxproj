@@ -13,6 +13,20 @@
 		65B32BC2299AA2DA002AEED9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65B32BC1299AA2DA002AEED9 /* Assets.xcassets */; };
 		65B32BC5299AA2DA002AEED9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65B32BC4299AA2DA002AEED9 /* Preview Assets.xcassets */; };
 		65B8CC6D299E2A4100E1FB44 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8CC6C299E2A4100E1FB44 /* Model.swift */; };
+		65BC227129D7A94E0082C401 /* Ocean.caf in Resources */ = {isa = PBXBuildFile; fileRef = 65BC226329D7A94C0082C401 /* Ocean.caf */; };
+		65BC227229D7A94E0082C401 /* Pink Noise.caf in Resources */ = {isa = PBXBuildFile; fileRef = 65BC226429D7A94C0082C401 /* Pink Noise.caf */; };
+		65BC227329D7A94E0082C401 /* Fire.caf in Resources */ = {isa = PBXBuildFile; fileRef = 65BC226529D7A94C0082C401 /* Fire.caf */; };
+		65BC227429D7A94E0082C401 /* Rain Wind.caf in Resources */ = {isa = PBXBuildFile; fileRef = 65BC226629D7A94D0082C401 /* Rain Wind.caf */; };
+		65BC227529D7A94E0082C401 /* Forest River.caf in Resources */ = {isa = PBXBuildFile; fileRef = 65BC226729D7A94D0082C401 /* Forest River.caf */; };
+		65BC227629D7A94E0082C401 /* Airplane Cabin.caf in Resources */ = {isa = PBXBuildFile; fileRef = 65BC226829D7A94D0082C401 /* Airplane Cabin.caf */; };
+		65BC227729D7A94E0082C401 /* Tornado.caf in Resources */ = {isa = PBXBuildFile; fileRef = 65BC226929D7A94D0082C401 /* Tornado.caf */; };
+		65BC227829D7A94E0082C401 /* Wind.caf in Resources */ = {isa = PBXBuildFile; fileRef = 65BC226A29D7A94D0082C401 /* Wind.caf */; };
+		65BC227929D7A94E0082C401 /* Uterus.caf in Resources */ = {isa = PBXBuildFile; fileRef = 65BC226B29D7A94E0082C401 /* Uterus.caf */; };
+		65BC227A29D7A94E0082C401 /* Waterfall.caf in Resources */ = {isa = PBXBuildFile; fileRef = 65BC226C29D7A94E0082C401 /* Waterfall.caf */; };
+		65BC227B29D7A94E0082C401 /* Nature.caf in Resources */ = {isa = PBXBuildFile; fileRef = 65BC226D29D7A94E0082C401 /* Nature.caf */; };
+		65BC227C29D7A94E0082C401 /* Rain.caf in Resources */ = {isa = PBXBuildFile; fileRef = 65BC226E29D7A94E0082C401 /* Rain.caf */; };
+		65BC227D29D7A94E0082C401 /* White Noise.caf in Resources */ = {isa = PBXBuildFile; fileRef = 65BC226F29D7A94E0082C401 /* White Noise.caf */; };
+		65BC227E29D7A94E0082C401 /* Running Water.caf in Resources */ = {isa = PBXBuildFile; fileRef = 65BC227029D7A94E0082C401 /* Running Water.caf */; };
 		65C5AF7F299C065D002D3F06 /* RectangleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C5AF7E299C065D002D3F06 /* RectangleButtonView.swift */; };
 		65E36CD729B784CE006D953E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E36CD629B784CE006D953E /* ViewModel.swift */; };
 		65F8274D29B17D7F007CC823 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F8274C29B17D7F007CC823 /* Utils.swift */; };
@@ -46,6 +60,20 @@
 		65B32BCA299AA2DB002AEED9 /* DeepSleepTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeepSleepTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65B32BD4299AA2DB002AEED9 /* DeepSleepUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeepSleepUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65B8CC6C299E2A4100E1FB44 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		65BC226329D7A94C0082C401 /* Ocean.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ocean.caf; sourceTree = "<group>"; };
+		65BC226429D7A94C0082C401 /* Pink Noise.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pink Noise.caf"; sourceTree = "<group>"; };
+		65BC226529D7A94C0082C401 /* Fire.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fire.caf; sourceTree = "<group>"; };
+		65BC226629D7A94D0082C401 /* Rain Wind.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rain Wind.caf"; sourceTree = "<group>"; };
+		65BC226729D7A94D0082C401 /* Forest River.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Forest River.caf"; sourceTree = "<group>"; };
+		65BC226829D7A94D0082C401 /* Airplane Cabin.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Airplane Cabin.caf"; sourceTree = "<group>"; };
+		65BC226929D7A94D0082C401 /* Tornado.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tornado.caf; sourceTree = "<group>"; };
+		65BC226A29D7A94D0082C401 /* Wind.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Wind.caf; sourceTree = "<group>"; };
+		65BC226B29D7A94E0082C401 /* Uterus.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Uterus.caf; sourceTree = "<group>"; };
+		65BC226C29D7A94E0082C401 /* Waterfall.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Waterfall.caf; sourceTree = "<group>"; };
+		65BC226D29D7A94E0082C401 /* Nature.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Nature.caf; sourceTree = "<group>"; };
+		65BC226E29D7A94E0082C401 /* Rain.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Rain.caf; sourceTree = "<group>"; };
+		65BC226F29D7A94E0082C401 /* White Noise.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "White Noise.caf"; sourceTree = "<group>"; };
+		65BC227029D7A94E0082C401 /* Running Water.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Running Water.caf"; sourceTree = "<group>"; };
 		65C5AF7E299C065D002D3F06 /* RectangleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleButtonView.swift; sourceTree = "<group>"; };
 		65E36CD629B784CE006D953E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		65F8274C29B17D7F007CC823 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
@@ -107,6 +135,7 @@
 		65B32BBC299AA2D9002AEED9 /* DeepSleep */ = {
 			isa = PBXGroup;
 			children = (
+				65BC226229D7A9210082C401 /* Sounds File */,
 				656D5D8829B1346500179D50 /* Views */,
 				65F8274C29B17D7F007CC823 /* Utils.swift */,
 				65B8CC6C299E2A4100E1FB44 /* Model.swift */,
@@ -125,6 +154,27 @@
 				65B32BC4299AA2DA002AEED9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		65BC226229D7A9210082C401 /* Sounds File */ = {
+			isa = PBXGroup;
+			children = (
+				65BC226829D7A94D0082C401 /* Airplane Cabin.caf */,
+				65BC226529D7A94C0082C401 /* Fire.caf */,
+				65BC226729D7A94D0082C401 /* Forest River.caf */,
+				65BC226D29D7A94E0082C401 /* Nature.caf */,
+				65BC226329D7A94C0082C401 /* Ocean.caf */,
+				65BC226429D7A94C0082C401 /* Pink Noise.caf */,
+				65BC226629D7A94D0082C401 /* Rain Wind.caf */,
+				65BC226E29D7A94E0082C401 /* Rain.caf */,
+				65BC227029D7A94E0082C401 /* Running Water.caf */,
+				65BC226929D7A94D0082C401 /* Tornado.caf */,
+				65BC226B29D7A94E0082C401 /* Uterus.caf */,
+				65BC226C29D7A94E0082C401 /* Waterfall.caf */,
+				65BC226F29D7A94E0082C401 /* White Noise.caf */,
+				65BC226A29D7A94D0082C401 /* Wind.caf */,
+			);
+			path = "Sounds File";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,8 +285,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65BC227D29D7A94E0082C401 /* White Noise.caf in Resources */,
 				65B32BC5299AA2DA002AEED9 /* Preview Assets.xcassets in Resources */,
 				65B32BC2299AA2DA002AEED9 /* Assets.xcassets in Resources */,
+				65BC227229D7A94E0082C401 /* Pink Noise.caf in Resources */,
+				65BC227A29D7A94E0082C401 /* Waterfall.caf in Resources */,
+				65BC227C29D7A94E0082C401 /* Rain.caf in Resources */,
+				65BC227629D7A94E0082C401 /* Airplane Cabin.caf in Resources */,
+				65BC227829D7A94E0082C401 /* Wind.caf in Resources */,
+				65BC227729D7A94E0082C401 /* Tornado.caf in Resources */,
+				65BC227129D7A94E0082C401 /* Ocean.caf in Resources */,
+				65BC227329D7A94E0082C401 /* Fire.caf in Resources */,
+				65BC227529D7A94E0082C401 /* Forest River.caf in Resources */,
+				65BC227429D7A94E0082C401 /* Rain Wind.caf in Resources */,
+				65BC227E29D7A94E0082C401 /* Running Water.caf in Resources */,
+				65BC227929D7A94E0082C401 /* Uterus.caf in Resources */,
+				65BC227B29D7A94E0082C401 /* Nature.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
