@@ -127,7 +127,6 @@ class AudioStoreViewModel: ObservableObject {
     // MARK: - testing up PLAY NOW
     func setupRemoteControl(for audio: Audio) {
         
-        
         do {
             //try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)// plays audio on backgrond and lock creen
             try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback, options: [])

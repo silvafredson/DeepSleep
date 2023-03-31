@@ -12,7 +12,7 @@ import AVFoundation
 struct ContentView: View {
     
     // MARK: - properties
-    //let audiosContent: Audio
+
     @StateObject var audioStored = AudioStoreViewModel(audios: audiosData)
     
     var body: some View {
