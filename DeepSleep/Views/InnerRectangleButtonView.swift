@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct InnerRectangleButtonView: View {
-    
-    //let audiosContent: Audio
-    
+   
     var body: some View {
         
         ZStack {

@@ -30,7 +30,7 @@ class AudioStoreViewModel: ObservableObject {
     
     @Published var audios: [Audio]
     var player = AVAudioPlayer()
-
+    
     init(audios: [Audio]) {
         self.audios = audios
     }
@@ -52,7 +52,7 @@ class AudioStoreViewModel: ObservableObject {
             }
         }
     }
-
+    
     func setIsPlaying(for audio: Audio) {
         if let index = audios.firstIndex(of: audio) {
             for i in 0..<audios.count {
@@ -89,11 +89,22 @@ class AudioStoreViewModel: ObservableObject {
         }
     }
     
+    // MARK: - Stop audio
+    func stopPlaying(audio: Audio) {
+        if let index = audios.firstIndex(of: audio) {
+            audios[index].player?.stop()
+            audios[index].player = nil
+            audios[index].isPlaying = false
+        }
+    }
+    
+    
+    // MARK: - Set up MPNowPlayingInfoCenter
     func setupNowPlaying(for audio: Audio) {
         var nowPlayingInfo = [String : Any]()
         
         nowPlayingInfo[MPMediaItemPropertyTitle] = audio.title
-
+        
         MPNowPlayingInfoCenter.default().nowPlayingInfo = nowPlayingInfo
         MPNowPlayingInfoCenter.default().playbackState = .playing
     }
@@ -102,26 +113,26 @@ class AudioStoreViewModel: ObservableObject {
     func setupRemoteCommandCenter(for audio: Audio) {
         UIApplication.shared.beginReceivingRemoteControlEvents()
         
-            let commandCenter = MPRemoteCommandCenter.shared()
-            commandCenter.playCommand.isEnabled = true
-            commandCenter.playCommand.addTarget { (_) -> MPRemoteCommandHandlerStatus in
-                    print("Should play")
-                
-                    //let player = try AVAudioPlayer(contentsOf: audio.audioURL!)
-                    
-                    self.player.play()
-                    return.success
-            }
+        let commandCenter = MPRemoteCommandCenter.shared()
+        commandCenter.playCommand.isEnabled = true
+        commandCenter.playCommand.addTarget { (_) -> MPRemoteCommandHandlerStatus in
+            print("Should play")
             
-            commandCenter.pauseCommand.isEnabled = true
-            commandCenter.pauseCommand.addTarget { (_) ->  MPRemoteCommandHandlerStatus in
-                    print("Should Pause")
-                
-                    //let player = try AVAudioPlayer(contentsOf: audio.audioURL!)
-                    
-                    self.player.pause()
-                    return.success
-            }
+            //let player = try AVAudioPlayer(contentsOf: audio.audioURL!)
+            
+            self.player.play()
+            return.success
+        }
+        
+        commandCenter.pauseCommand.isEnabled = true
+        commandCenter.pauseCommand.addTarget { (_) ->  MPRemoteCommandHandlerStatus in
+            print("Should Pause")
+            
+            //let player = try AVAudioPlayer(contentsOf: audio.audioURL!)
+            
+            self.player.pause()
+            return.success
+        }
     }
     
     // MARK: - testing up PLAY NOW
@@ -133,24 +144,15 @@ class AudioStoreViewModel: ObservableObject {
             try AVAudioSession.sharedInstance().setActive(true)
             
             do {
-               try AVAudioSession.sharedInstance().setActive(true)
-                       print("AVAudioSession is Active")
-               } catch let error as NSError {
-                           print(error.localizedDescription)
-
-               }
+                try AVAudioSession.sharedInstance().setActive(true)
+                print("AVAudioSession is Active")
+            } catch let error as NSError {
+                print(error.localizedDescription)
+                
+            }
             
         } catch let error {
             print("Erro setting the AVAudioSession: \(error.localizedDescription)")//
-        }
-    }
-    
-    // MARK: - Stop audio
-    func stopPlaying(audio: Audio) {
-        if let index = audios.firstIndex(of: audio) {
-            audios[index].player?.stop()
-            audios[index].player = nil
-            audios[index].isPlaying = false
         }
     }
 }

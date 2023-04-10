@@ -9,8 +9,6 @@ import SwiftUI
 
 struct RectangleButtonView: View {
     
-    //let audiosContent: Audio
-    
         var body: some View {
         
         ZStack {         

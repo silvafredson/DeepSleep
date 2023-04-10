@@ -11,8 +11,6 @@ import AVFoundation
 
 struct ContentView: View {
     
-    // MARK: - properties
-
     @StateObject var audioStored = AudioStoreViewModel(audios: audiosData)
     
     var body: some View {
@@ -68,7 +66,7 @@ struct ContentView: View {
     } // body
 }
 
-// MARK: - Modify the Navi tab bar's color
+// MARK: - Modifys Navi tab bar color
 extension UINavigationController {
     override open func viewDidLoad() {
         super.viewDidLoad()
