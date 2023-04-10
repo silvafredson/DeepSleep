@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RectangleButtonView: View {
     
-        var body: some View {
+    var body: some View {
         
         ZStack {         
             Rectangle()

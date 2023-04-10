@@ -29,10 +29,17 @@ let audiosData: [Audio] = [
 class AudioStoreViewModel: ObservableObject {
     
     @Published var audios: [Audio]
-    var player = AVAudioPlayer()
+    var player: AVAudioPlayer?
     
     init(audios: [Audio]) {
         self.audios = audios
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: [.allowAirPlay, .allowBluetoothA2DP, .allowBluetooth])
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch {
+            print("Error setting up audio session: \(error.localizedDescription)")
+        }
     }
     
     func toggleIsPlaying(for audio: Audio) {
@@ -75,9 +82,13 @@ class AudioStoreViewModel: ObservableObject {
         //setUpAVPlayer(audio: audio)
         
         do {
-            let player = try AVAudioPlayer(contentsOf: audio.audioURL!)
-            player.numberOfLoops = -1
-            player.play()
+            guard let audioURL = audio.audioURL else {
+                print("Error: audio URL is nil for \(audio.title)")
+                return
+            }
+            player = try AVAudioPlayer(contentsOf: audioURL)
+            player?.numberOfLoops = -1
+            player?.play()
             
             if let index = audios.firstIndex(of: audio) {
                 audios[index].player = player
@@ -120,7 +131,7 @@ class AudioStoreViewModel: ObservableObject {
             
             //let player = try AVAudioPlayer(contentsOf: audio.audioURL!)
             
-            self.player.play()
+            self.player?.play()
             return.success
         }
         
@@ -130,7 +141,7 @@ class AudioStoreViewModel: ObservableObject {
             
             //let player = try AVAudioPlayer(contentsOf: audio.audioURL!)
             
-            self.player.pause()
+            self.player?.pause()
             return.success
         }
     }
