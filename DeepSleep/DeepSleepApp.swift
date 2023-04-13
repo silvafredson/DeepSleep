@@ -9,9 +9,22 @@ import SwiftUI
 
 @main
 struct DeepSleepApp: App {
+    
+    @State private var showLaunchView = true
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ZStack {
+                ContentView()
+                
+                ZStack {
+                    if showLaunchView {
+                        LaunchView(showLaunchView: $showLaunchView)
+                            //.transition(.opacity)
+                    }
+                }
+                .zIndex(2.0)
+            }
         }
     }
 }

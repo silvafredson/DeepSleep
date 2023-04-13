@@ -3,11 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		653F270D29E6E4B00004FB75 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653F270C29E6E4B00004FB75 /* LaunchView.swift */; };
 		6560708929A6A36900C188E5 /* InnerRectangleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560708829A6A36900C188E5 /* InnerRectangleButtonView.swift */; };
+		657C7F8A29E631B300E065A3 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657C7F8929E631B300E065A3 /* LaunchScreen.swift */; };
+		657C7F8C29E6B6C600E065A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 657C7F8B29E6B6C600E065A3 /* LaunchScreen.storyboard */; };
 		65B32BBE299AA2D9002AEED9 /* DeepSleepApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B32BBD299AA2D9002AEED9 /* DeepSleepApp.swift */; };
 		65B32BC0299AA2D9002AEED9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B32BBF299AA2D9002AEED9 /* ContentView.swift */; };
 		65B32BC2299AA2DA002AEED9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65B32BC1299AA2DA002AEED9 /* Assets.xcassets */; };
@@ -32,33 +35,17 @@
 		65F8274D29B17D7F007CC823 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F8274C29B17D7F007CC823 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		65B32BCB299AA2DB002AEED9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 65B32BB2299AA2D9002AEED9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 65B32BB9299AA2D9002AEED9;
-			remoteInfo = DeepSleep;
-		};
-		65B32BD5299AA2DB002AEED9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 65B32BB2299AA2D9002AEED9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 65B32BB9299AA2D9002AEED9;
-			remoteInfo = DeepSleep;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		653F270C29E6E4B00004FB75 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		6560708829A6A36900C188E5 /* InnerRectangleButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnerRectangleButtonView.swift; sourceTree = "<group>"; };
+		657C7F8929E631B300E065A3 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		657C7F8B29E6B6C600E065A3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65A8F3B629A98CA80011C5CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		65B32BBA299AA2D9002AEED9 /* DeepSleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepSleep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65B32BBD299AA2D9002AEED9 /* DeepSleepApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepSleepApp.swift; sourceTree = "<group>"; };
 		65B32BBF299AA2D9002AEED9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		65B32BC1299AA2DA002AEED9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65B32BC4299AA2DA002AEED9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		65B32BCA299AA2DB002AEED9 /* DeepSleepTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeepSleepTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		65B32BD4299AA2DB002AEED9 /* DeepSleepUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeepSleepUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65B8CC6C299E2A4100E1FB44 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		65BC226329D7A94C0082C401 /* Ocean.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ocean.caf; sourceTree = "<group>"; };
 		65BC226429D7A94C0082C401 /* Pink Noise.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pink Noise.caf"; sourceTree = "<group>"; };
@@ -87,20 +74,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		65B32BC7299AA2DB002AEED9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		65B32BD1299AA2DB002AEED9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -110,6 +83,8 @@
 				65B32BBF299AA2D9002AEED9 /* ContentView.swift */,
 				65C5AF7E299C065D002D3F06 /* RectangleButtonView.swift */,
 				6560708829A6A36900C188E5 /* InnerRectangleButtonView.swift */,
+				657C7F8929E631B300E065A3 /* LaunchScreen.swift */,
+				653F270C29E6E4B00004FB75 /* LaunchView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -126,8 +101,6 @@
 			isa = PBXGroup;
 			children = (
 				65B32BBA299AA2D9002AEED9 /* DeepSleep.app */,
-				65B32BCA299AA2DB002AEED9 /* DeepSleepTests.xctest */,
-				65B32BD4299AA2DB002AEED9 /* DeepSleepUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,6 +114,7 @@
 				65B8CC6C299E2A4100E1FB44 /* Model.swift */,
 				65E36CD629B784CE006D953E /* ViewModel.swift */,
 				65B32BBD299AA2D9002AEED9 /* DeepSleepApp.swift */,
+				657C7F8B29E6B6C600E065A3 /* LaunchScreen.storyboard */,
 				65B32BC1299AA2DA002AEED9 /* Assets.xcassets */,
 				65A8F3B629A98CA80011C5CB /* Info.plist */,
 				65B32BC3299AA2DA002AEED9 /* Preview Content */,
@@ -199,42 +173,6 @@
 			productReference = 65B32BBA299AA2D9002AEED9 /* DeepSleep.app */;
 			productType = "com.apple.product-type.application";
 		};
-		65B32BC9299AA2DB002AEED9 /* DeepSleepTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 65B32BE1299AA2DB002AEED9 /* Build configuration list for PBXNativeTarget "DeepSleepTests" */;
-			buildPhases = (
-				65B32BC6299AA2DB002AEED9 /* Sources */,
-				65B32BC7299AA2DB002AEED9 /* Frameworks */,
-				65B32BC8299AA2DB002AEED9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				65B32BCC299AA2DB002AEED9 /* PBXTargetDependency */,
-			);
-			name = DeepSleepTests;
-			productName = DeepSleepTests;
-			productReference = 65B32BCA299AA2DB002AEED9 /* DeepSleepTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		65B32BD3299AA2DB002AEED9 /* DeepSleepUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 65B32BE4299AA2DB002AEED9 /* Build configuration list for PBXNativeTarget "DeepSleepUITests" */;
-			buildPhases = (
-				65B32BD0299AA2DB002AEED9 /* Sources */,
-				65B32BD1299AA2DB002AEED9 /* Frameworks */,
-				65B32BD2299AA2DB002AEED9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				65B32BD6299AA2DB002AEED9 /* PBXTargetDependency */,
-			);
-			name = DeepSleepUITests;
-			productName = DeepSleepUITests;
-			productReference = 65B32BD4299AA2DB002AEED9 /* DeepSleepUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -248,18 +186,10 @@
 					65B32BB9299AA2D9002AEED9 = {
 						CreatedOnToolsVersion = 14.2;
 					};
-					65B32BC9299AA2DB002AEED9 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 65B32BB9299AA2D9002AEED9;
-					};
-					65B32BD3299AA2DB002AEED9 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 65B32BB9299AA2D9002AEED9;
-					};
 				};
 			};
 			buildConfigurationList = 65B32BB5299AA2D9002AEED9 /* Build configuration list for PBXProject "DeepSleep" */;
-			compatibilityVersion = "Xcode 12.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -274,8 +204,6 @@
 			projectRoot = "";
 			targets = (
 				65B32BB9299AA2D9002AEED9 /* DeepSleep */,
-				65B32BC9299AA2DB002AEED9 /* DeepSleepTests */,
-				65B32BD3299AA2DB002AEED9 /* DeepSleepUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -292,6 +220,7 @@
 				65BC227A29D7A94E0082C401 /* Waterfall.caf in Resources */,
 				65BC227C29D7A94E0082C401 /* Rain.caf in Resources */,
 				65BC227629D7A94E0082C401 /* Airplane Cabin.caf in Resources */,
+				657C7F8C29E6B6C600E065A3 /* LaunchScreen.storyboard in Resources */,
 				65BC227829D7A94E0082C401 /* Wind.caf in Resources */,
 				65BC227729D7A94E0082C401 /* Tornado.caf in Resources */,
 				65BC227129D7A94E0082C401 /* Ocean.caf in Resources */,
@@ -304,20 +233,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		65B32BC8299AA2DB002AEED9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		65B32BD2299AA2DB002AEED9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -325,44 +240,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				657C7F8A29E631B300E065A3 /* LaunchScreen.swift in Sources */,
 				65B8CC6D299E2A4100E1FB44 /* Model.swift in Sources */,
 				65B32BC0299AA2D9002AEED9 /* ContentView.swift in Sources */,
 				65B32BBE299AA2D9002AEED9 /* DeepSleepApp.swift in Sources */,
 				65C5AF7F299C065D002D3F06 /* RectangleButtonView.swift in Sources */,
 				6560708929A6A36900C188E5 /* InnerRectangleButtonView.swift in Sources */,
 				65E36CD729B784CE006D953E /* ViewModel.swift in Sources */,
+				653F270D29E6E4B00004FB75 /* LaunchView.swift in Sources */,
 				65F8274D29B17D7F007CC823 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		65B32BC6299AA2DB002AEED9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		65B32BD0299AA2DB002AEED9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		65B32BCC299AA2DB002AEED9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 65B32BB9299AA2D9002AEED9 /* DeepSleep */;
-			targetProxy = 65B32BCB299AA2DB002AEED9 /* PBXContainerItemProxy */;
-		};
-		65B32BD6299AA2DB002AEED9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 65B32BB9299AA2D9002AEED9 /* DeepSleep */;
-			targetProxy = 65B32BD5299AA2DB002AEED9 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		65B32BDC299AA2DB002AEED9 /* Debug */ = {
@@ -484,19 +374,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEVELOPMENT_ASSET_PATHS = "\"DeepSleep/Preview Content\"";
 				DEVELOPMENT_TEAM = 4HPPGS6GJD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DeepSleep/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DeepSleep;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
 				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Permitir o acesso à biblioteca de mídia para reproduzir músicas";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Permitir o acesso ao microfone para gravar áudio";
 				INFOPLIST_KEY_NSMotionUsageDescription = "Permitir o acesso aos sensores do dispositivo para detectar movimentos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -520,19 +412,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEVELOPMENT_ASSET_PATHS = "\"DeepSleep/Preview Content\"";
 				DEVELOPMENT_TEAM = 4HPPGS6GJD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DeepSleep/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DeepSleep;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.medical";
 				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Permitir o acesso à biblioteca de mídia para reproduzir músicas";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Permitir o acesso ao microfone para gravar áudio";
 				INFOPLIST_KEY_NSMotionUsageDescription = "Permitir o acesso aos sensores do dispositivo para detectar movimentos";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -548,94 +442,6 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
-		65B32BE2299AA2DB002AEED9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4HPPGS6GJD;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "silva.fredson-hotmail.com.DeepSleepTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeepSleep.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DeepSleep";
-			};
-			name = Debug;
-		};
-		65B32BE3299AA2DB002AEED9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4HPPGS6GJD;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "silva.fredson-hotmail.com.DeepSleepTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DeepSleep.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DeepSleep";
-			};
-			name = Release;
-		};
-		65B32BE5299AA2DB002AEED9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4HPPGS6GJD;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "silva.fredson-hotmail.com.DeepSleepUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DeepSleep;
-			};
-			name = Debug;
-		};
-		65B32BE6299AA2DB002AEED9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4HPPGS6GJD;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "silva.fredson-hotmail.com.DeepSleepUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DeepSleep;
 			};
 			name = Release;
 		};
@@ -656,24 +462,6 @@
 			buildConfigurations = (
 				65B32BDF299AA2DB002AEED9 /* Debug */,
 				65B32BE0299AA2DB002AEED9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		65B32BE1299AA2DB002AEED9 /* Build configuration list for PBXNativeTarget "DeepSleepTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				65B32BE2299AA2DB002AEED9 /* Debug */,
-				65B32BE3299AA2DB002AEED9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		65B32BE4299AA2DB002AEED9 /* Build configuration list for PBXNativeTarget "DeepSleepUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				65B32BE5299AA2DB002AEED9 /* Debug */,
-				65B32BE6299AA2DB002AEED9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

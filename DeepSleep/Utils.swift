@@ -5,7 +5,6 @@
 //  Created by Fredson Silva on 02/03/23.
 //
 
-import Foundation
 import SwiftUI
 
 struct Utils {

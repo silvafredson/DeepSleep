@@ -6,8 +6,8 @@
 //
 
 import SwiftUI
-import UIKit
 import AVFoundation
+import UIKit
 
 struct ContentView: View {
     
@@ -79,9 +79,9 @@ extension UINavigationController {
                 .font: UIFont.systemFont(ofSize: 30, weight: .semibold)
             ]
             appearance.shadowColor = .white
-
+   
             UINavigationBar.appearance().standardAppearance = appearance
-            UINavigationBar.appearance().scrollEdgeAppearance = appearance
+            //UINavigationBar.appearance().scrollEdgeAppearance = appearance
     }
 }
 

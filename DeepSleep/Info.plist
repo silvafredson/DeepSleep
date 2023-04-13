@@ -11,6 +11,8 @@
 	<array>
 		<string>audio</string>
 	</array>
+	<key>UILaunchScreen</key>
+	<dict/>
 	<key>UISceneSession</key>
 	<array/>
 	<key>info.plist</key>

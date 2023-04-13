@@ -5,7 +5,6 @@
 //  Created by Fredson Silva on 07/03/23.
 //
 
-import Foundation
 import AVFoundation
 import MediaPlayer
 
@@ -42,6 +41,9 @@ class AudioStoreViewModel: ObservableObject {
         }
     }
     
+    // MARK: -
+    /// The toggleIsPlaying(for audio: Audio) function is responsible for toggling the playback state of an Audio object and stopping the playback of any other Audio object that is currently playing.
+
     func toggleIsPlaying(for audio: Audio) {
         if let index = audios.firstIndex(of: audio) {
             for i in 0..<audios.count {
@@ -60,18 +62,18 @@ class AudioStoreViewModel: ObservableObject {
         }
     }
     
-    func setIsPlaying(for audio: Audio) {
-        if let index = audios.firstIndex(of: audio) {
-            for i in 0..<audios.count {
-                if i != index {
-                    audios[i].isPlaying = false
-                    stopPlaying(audio: audios[i])
-                }
-            }
-            audios[index].isPlaying = true
-            startPlaying(audio: audios[index])
-        }
-    }
+//    func setIsPlaying(for audio: Audio) {
+//        if let index = audios.firstIndex(of: audio) {
+//            for i in 0..<audios.count {
+//                if i != index {
+//                    audios[i].isPlaying = false
+//                    stopPlaying(audio: audios[i])
+//                }
+//            }
+//            audios[index].isPlaying = true
+//            startPlaying(audio: audios[index])
+//        }
+//    }
     
     // MARK: - Play audio
     func startPlaying(audio: Audio) {
@@ -79,7 +81,6 @@ class AudioStoreViewModel: ObservableObject {
         setupRemoteControl(for: audio)
         setupNowPlaying(for: audio)
         setupRemoteCommandCenter(for: audio)
-        //setUpAVPlayer(audio: audio)
         
         do {
             guard let audioURL = audio.audioURL else {
@@ -96,7 +97,6 @@ class AudioStoreViewModel: ObservableObject {
             }
         } catch {
             print("Error starting playback for audio \(audio.title): \(error.localizedDescription)")
-            
         }
     }
     
@@ -115,6 +115,7 @@ class AudioStoreViewModel: ObservableObject {
         var nowPlayingInfo = [String : Any]()
         
         nowPlayingInfo[MPMediaItemPropertyTitle] = audio.title
+        //nowPlayingInfo[MPMediaItemPropertyArtwork] = audio.iconName
         
         MPNowPlayingInfoCenter.default().nowPlayingInfo = nowPlayingInfo
         MPNowPlayingInfoCenter.default().playbackState = .playing
@@ -129,8 +130,6 @@ class AudioStoreViewModel: ObservableObject {
         commandCenter.playCommand.addTarget { (_) -> MPRemoteCommandHandlerStatus in
             print("Should play")
             
-            //let player = try AVAudioPlayer(contentsOf: audio.audioURL!)
-            
             self.player?.play()
             return.success
         }
@@ -138,8 +137,6 @@ class AudioStoreViewModel: ObservableObject {
         commandCenter.pauseCommand.isEnabled = true
         commandCenter.pauseCommand.addTarget { (_) ->  MPRemoteCommandHandlerStatus in
             print("Should Pause")
-            
-            //let player = try AVAudioPlayer(contentsOf: audio.audioURL!)
             
             self.player?.pause()
             return.success
@@ -150,7 +147,6 @@ class AudioStoreViewModel: ObservableObject {
     func setupRemoteControl(for audio: Audio) {
         
         do {
-            //try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)// plays audio on backgrond and lock creen
             try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback, options: [])
             try AVAudioSession.sharedInstance().setActive(true)
             
