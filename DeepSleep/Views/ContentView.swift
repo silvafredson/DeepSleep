@@ -12,6 +12,7 @@ import UIKit
 struct ContentView: View {
     
     @StateObject var audioStored = AudioStoreViewModel(audios: audiosData)
+    @State private var isShowingSeetings = false
     
     var body: some View {
         
@@ -49,12 +50,12 @@ struct ContentView: View {
                                         audioStored.toggleIsPlaying(for: audio)
                                     }
                                 }
-                                .onChange(of: audio.isPlaying) { newValue in
-                                    // it Updates the display of the button when the audio playback state changes
-                                    if !newValue {
-                                        audioStored.toggleIsPlaying(for: audio)
-                                    }
-                                }
+//                                .onChange(of: audio.isPlaying) { newValue in
+//                                    // it Updates the display of the button when the audio playback state changes
+//                                    if !newValue {
+//                                        audioStored.toggleIsPlaying(for: audio)
+//                                    }
+//                                }
                             } // ForEach
                         } // VGrig
                         .padding()
@@ -62,11 +63,23 @@ struct ContentView: View {
             }// ZStack
             .navigationTitle("DeepSleep")
             .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                Button {
+                    isShowingSeetings = true
+                } label: {
+                    Image(systemName: "ellipsis")
+                        .foregroundColor(Utils.SavedColors.fontColor)
+                }
+                .sheet(isPresented: $isShowingSeetings) {
+                    SettingsView()
+                }
+
+            } // toolbar
         } // Navi
     } // body
 }
 
-// MARK: - Modifys Navi tab bar color
+// MARK: - Modify Navi bar color
 extension UINavigationController {
     override open func viewDidLoad() {
         super.viewDidLoad()

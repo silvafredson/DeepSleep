@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		653F270D29E6E4B00004FB75 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653F270C29E6E4B00004FB75 /* LaunchView.swift */; };
 		6560708929A6A36900C188E5 /* InnerRectangleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560708829A6A36900C188E5 /* InnerRectangleButtonView.swift */; };
+		65664F6429EB78370090FC06 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65664F6629EB78370090FC06 /* Localizable.strings */; };
 		657C7F8A29E631B300E065A3 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657C7F8929E631B300E065A3 /* LaunchScreen.swift */; };
 		657C7F8C29E6B6C600E065A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 657C7F8B29E6B6C600E065A3 /* LaunchScreen.storyboard */; };
+		659A62E829EB72130039024F /* SettingsLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659A62E729EB72130039024F /* SettingsLabelView.swift */; };
 		65B32BBE299AA2D9002AEED9 /* DeepSleepApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B32BBD299AA2D9002AEED9 /* DeepSleepApp.swift */; };
 		65B32BC0299AA2D9002AEED9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B32BBF299AA2D9002AEED9 /* ContentView.swift */; };
 		65B32BC2299AA2DA002AEED9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65B32BC1299AA2DA002AEED9 /* Assets.xcassets */; };
 		65B32BC5299AA2DA002AEED9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65B32BC4299AA2DA002AEED9 /* Preview Assets.xcassets */; };
 		65B8CC6D299E2A4100E1FB44 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8CC6C299E2A4100E1FB44 /* Model.swift */; };
+		65B9822729EB210C00D0C101 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B9822629EB210C00D0C101 /* SettingsView.swift */; };
 		65BC227129D7A94E0082C401 /* Ocean.caf in Resources */ = {isa = PBXBuildFile; fileRef = 65BC226329D7A94C0082C401 /* Ocean.caf */; };
 		65BC227229D7A94E0082C401 /* Pink Noise.caf in Resources */ = {isa = PBXBuildFile; fileRef = 65BC226429D7A94C0082C401 /* Pink Noise.caf */; };
 		65BC227329D7A94E0082C401 /* Fire.caf in Resources */ = {isa = PBXBuildFile; fileRef = 65BC226529D7A94C0082C401 /* Fire.caf */; };
@@ -38,15 +41,19 @@
 /* Begin PBXFileReference section */
 		653F270C29E6E4B00004FB75 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		6560708829A6A36900C188E5 /* InnerRectangleButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnerRectangleButtonView.swift; sourceTree = "<group>"; };
+		65664F6529EB78370090FC06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		657C7F8929E631B300E065A3 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		657C7F8B29E6B6C600E065A3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		659A62E729EB72130039024F /* SettingsLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabelView.swift; sourceTree = "<group>"; };
 		65A8F3B629A98CA80011C5CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		65B32BBA299AA2D9002AEED9 /* DeepSleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepSleep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65B32BBD299AA2D9002AEED9 /* DeepSleepApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepSleepApp.swift; sourceTree = "<group>"; };
 		65B32BBF299AA2D9002AEED9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		65B32BC1299AA2DA002AEED9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65B32BC4299AA2DA002AEED9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		65B6607129EB8EAD00B38393 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		65B8CC6C299E2A4100E1FB44 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		65B9822629EB210C00D0C101 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		65BC226329D7A94C0082C401 /* Ocean.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ocean.caf; sourceTree = "<group>"; };
 		65BC226429D7A94C0082C401 /* Pink Noise.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pink Noise.caf"; sourceTree = "<group>"; };
 		65BC226529D7A94C0082C401 /* Fire.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fire.caf; sourceTree = "<group>"; };
@@ -85,6 +92,7 @@
 				6560708829A6A36900C188E5 /* InnerRectangleButtonView.swift */,
 				657C7F8929E631B300E065A3 /* LaunchScreen.swift */,
 				653F270C29E6E4B00004FB75 /* LaunchView.swift */,
+				659A62E729EB72130039024F /* SettingsLabelView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -108,13 +116,10 @@
 		65B32BBC299AA2D9002AEED9 /* DeepSleep */ = {
 			isa = PBXGroup;
 			children = (
+				65B9822529EB20C500D0C101 /* Data */,
+				65B9822429EB20B100D0C101 /* App */,
 				65BC226229D7A9210082C401 /* Sounds File */,
 				656D5D8829B1346500179D50 /* Views */,
-				65F8274C29B17D7F007CC823 /* Utils.swift */,
-				65B8CC6C299E2A4100E1FB44 /* Model.swift */,
-				65E36CD629B784CE006D953E /* ViewModel.swift */,
-				65B32BBD299AA2D9002AEED9 /* DeepSleepApp.swift */,
-				657C7F8B29E6B6C600E065A3 /* LaunchScreen.storyboard */,
 				65B32BC1299AA2DA002AEED9 /* Assets.xcassets */,
 				65A8F3B629A98CA80011C5CB /* Info.plist */,
 				65B32BC3299AA2DA002AEED9 /* Preview Content */,
@@ -128,6 +133,27 @@
 				65B32BC4299AA2DA002AEED9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		65B9822429EB20B100D0C101 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				65664F6629EB78370090FC06 /* Localizable.strings */,
+				65B32BBD299AA2D9002AEED9 /* DeepSleepApp.swift */,
+				65B9822629EB210C00D0C101 /* SettingsView.swift */,
+				657C7F8B29E6B6C600E065A3 /* LaunchScreen.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		65B9822529EB20C500D0C101 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				65F8274C29B17D7F007CC823 /* Utils.swift */,
+				65B8CC6C299E2A4100E1FB44 /* Model.swift */,
+				65E36CD629B784CE006D953E /* ViewModel.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		65BC226229D7A9210082C401 /* Sounds File */ = {
@@ -195,6 +221,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 65B32BB1299AA2D9002AEED9;
 			packageReferences = (
@@ -226,6 +253,7 @@
 				65BC227129D7A94E0082C401 /* Ocean.caf in Resources */,
 				65BC227329D7A94E0082C401 /* Fire.caf in Resources */,
 				65BC227529D7A94E0082C401 /* Forest River.caf in Resources */,
+				65664F6429EB78370090FC06 /* Localizable.strings in Resources */,
 				65BC227429D7A94E0082C401 /* Rain Wind.caf in Resources */,
 				65BC227E29D7A94E0082C401 /* Running Water.caf in Resources */,
 				65BC227929D7A94E0082C401 /* Uterus.caf in Resources */,
@@ -245,20 +273,35 @@
 				65B32BC0299AA2D9002AEED9 /* ContentView.swift in Sources */,
 				65B32BBE299AA2D9002AEED9 /* DeepSleepApp.swift in Sources */,
 				65C5AF7F299C065D002D3F06 /* RectangleButtonView.swift in Sources */,
+				65B9822729EB210C00D0C101 /* SettingsView.swift in Sources */,
 				6560708929A6A36900C188E5 /* InnerRectangleButtonView.swift in Sources */,
 				65E36CD729B784CE006D953E /* ViewModel.swift in Sources */,
 				653F270D29E6E4B00004FB75 /* LaunchView.swift in Sources */,
+				659A62E829EB72130039024F /* SettingsLabelView.swift in Sources */,
 				65F8274D29B17D7F007CC823 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		65664F6629EB78370090FC06 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65664F6529EB78370090FC06 /* en */,
+				65B6607129EB8EAD00B38393 /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		65B32BDC299AA2DB002AEED9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -319,6 +362,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

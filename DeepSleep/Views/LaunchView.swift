@@ -23,7 +23,8 @@ struct LaunchView: View {
                             Image("LaunchScreen")
                                 .resizable()
                                 .scaledToFill()
-                            .frame(width: 140, height: 140)
+                                .frame(width: 140, height: 140)
+                            
                             ZStack {
                                 Text(loadingText)
                                     .font(.system(size: 30, weight: .bold, design: .rounded))
@@ -36,7 +37,7 @@ struct LaunchView: View {
                     }
                 }
                 .onAppear {
-                    withAnimation(.linear(duration: 2)) {
+                    withAnimation(.easeOut(duration: 1)) {
                         showLaunchView = false
                         isImageAnimated.toggle()
                     }
