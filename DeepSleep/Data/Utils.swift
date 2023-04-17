@@ -25,6 +25,14 @@ struct Utils {
         }
     }
     
+    struct InfoShadowModifier: ViewModifier {
+        func body(content: Content) -> some View {
+            content
+                .shadow(color: (Utils.SavedColors.darkShadow), radius: 15, x: -4, y: -4)
+                .shadow(color: (Utils.SavedColors.darkShadow), radius: 15, x:4, y: 4)
+        }
+    }
+    
     struct IconModifier: ViewModifier {
         func body(content: Content) -> some View {
             content

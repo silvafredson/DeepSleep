@@ -42,7 +42,7 @@ class AudioStoreViewModel: ObservableObject {
     }
     
     // MARK: -
-    /// The toggleIsPlaying(for audio: Audio) function is responsible for toggling the playback state of an Audio object and stopping the playback of any other Audio object that is currently playing.
+    /// The toggleIsPlaying(for audio: Audio) method is responsible for toggling the playback state of an Audio object and stopping the playback of any other Audio object that is currently playing.
 
     func toggleIsPlaying(for audio: Audio) {
         if let index = audios.firstIndex(of: audio) {

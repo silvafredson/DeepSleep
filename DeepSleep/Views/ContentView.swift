@@ -12,7 +12,6 @@ import UIKit
 struct ContentView: View {
     
     @StateObject var audioStored = AudioStoreViewModel(audios: audiosData)
-    @State private var isShowingSeetings = false
     
     var body: some View {
         
@@ -64,16 +63,10 @@ struct ContentView: View {
             .navigationTitle("DeepSleep")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
-                Button {
-                    isShowingSeetings = true
-                } label: {
+                NavigationLink(destination: SettingsView()) {
                     Image(systemName: "ellipsis")
                         .foregroundColor(Utils.SavedColors.fontColor)
                 }
-                .sheet(isPresented: $isShowingSeetings) {
-                    SettingsView()
-                }
-
             } // toolbar
         } // Navi
     } // body

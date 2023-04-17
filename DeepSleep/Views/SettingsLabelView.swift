@@ -14,16 +14,18 @@ struct SettingsLabelView: View {
     
     var body: some View {
         HStack {
-            Text("White Noise").fontWeight(.bold)
+            Text(labelText).fontWeight(.bold)
+                .foregroundColor(Utils.SavedColors.fontColor)
             Spacer()
-            Image(systemName: "info.circle")
+            Image(systemName: labelImage)
+                .foregroundColor(Utils.SavedColors.fontColor)
         }
     }
 }
 
 struct SettingsLabelView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsLabelView(labelText: "White Noise", labelImage: "info.circle")
+        SettingsLabelView(labelText: "OI", labelImage: "info.circle")
             .previewLayout(.sizeThatFits)
             .padding()
     }

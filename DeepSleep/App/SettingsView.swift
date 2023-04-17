@@ -9,12 +9,10 @@ import SwiftUI
 
 struct SettingsView: View {
     
-    @Environment(\.presentationMode) var presentationMode
-    
     var body: some View {
         ZStack {
             (Utils.SavedColors.bgColor).ignoresSafeArea()
-            NavigationView {
+            //NavigationView {
                 
                 ScrollView(.vertical, showsIndicators: false) {
                     
@@ -22,28 +20,21 @@ struct SettingsView: View {
                         // MARK: - Section 1
                         GroupBox(
                             label:
-                                SettingsLabelView(labelText: "teste", labelImage: "Text")
+                                SettingsLabelView(labelText: "Audios information", labelImage: "info.circle")
                         ) {
+                            Divider().padding(.vertical, 4)
                             Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
                         }
+                        .modifier(Utils.InfoShadowModifier())
                         
                         // MARK: - Section 2
                         
                         // MARK: - Section 3
                     } // VStack
-                    .navigationTitle(Text("Info"))
-                    .toolbar {
-                        //trailing:
-                            Button {
-                                presentationMode.wrappedValue.dismiss()
-                            } label: {
-                                Image(systemName: "xmark")
-                            }
-                            .modifier(Utils.ShadowModifier())
-                    } // toolbar
+                    //.navigationTitle(Text("Info")
                     .padding()
                 } // Scroll
-            } // Navi
+            //} // Navi
             
         }
     }
