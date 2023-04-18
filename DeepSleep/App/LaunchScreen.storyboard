@@ -33,9 +33,8 @@
                                             <constraint firstAttribute="width" constant="140" id="xlh-cc-zSR"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DeepSleep" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bK-Ax-gL0">
-                                        <rect key="frame" x="142" y="487" width="153" height="36"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DeepSleep" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bK-Ax-gL0">
+                                        <rect key="frame" x="120" y="479.66666666666663" width="153" height="36"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <color key="textColor" name="fontColor"/>
                                         <nil key="highlightedColor"/>
@@ -43,8 +42,11 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="UIf-Jm-UKe" firstAttribute="centerY" secondItem="iLS-cK-WXq" secondAttribute="centerY" id="Kca-uP-s3n"/>
-                                    <constraint firstItem="UIf-Jm-UKe" firstAttribute="centerX" secondItem="iLS-cK-WXq" secondAttribute="centerX" id="zdk-ye-XG2"/>
+                                    <constraint firstItem="4bK-Ax-gL0" firstAttribute="leading" secondItem="iLS-cK-WXq" secondAttribute="leading" constant="120" id="69g-V6-P57"/>
+                                    <constraint firstAttribute="trailing" secondItem="4bK-Ax-gL0" secondAttribute="trailing" constant="120" id="VdG-lb-wX0"/>
+                                    <constraint firstItem="UIf-Jm-UKe" firstAttribute="centerY" secondItem="iLS-cK-WXq" secondAttribute="centerY" id="aie-EO-zFk"/>
+                                    <constraint firstItem="4bK-Ax-gL0" firstAttribute="top" secondItem="UIf-Jm-UKe" secondAttribute="bottom" constant="30" id="sLN-xe-TY1"/>
+                                    <constraint firstItem="UIf-Jm-UKe" firstAttribute="centerX" secondItem="iLS-cK-WXq" secondAttribute="centerX" id="vCB-1O-aQP"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -63,7 +65,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
         </scene>
     </scenes>
     <resources>

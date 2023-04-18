@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6528E12829EE188100A0C70F /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6528E12729EE188100A0C70F /* SettingsRowView.swift */; };
 		653F270D29E6E4B00004FB75 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653F270C29E6E4B00004FB75 /* LaunchView.swift */; };
 		6560708929A6A36900C188E5 /* InnerRectangleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560708829A6A36900C188E5 /* InnerRectangleButtonView.swift */; };
 		65664F6429EB78370090FC06 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65664F6629EB78370090FC06 /* Localizable.strings */; };
 		657C7F8A29E631B300E065A3 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657C7F8929E631B300E065A3 /* LaunchScreen.swift */; };
 		657C7F8C29E6B6C600E065A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 657C7F8B29E6B6C600E065A3 /* LaunchScreen.storyboard */; };
-		659A62E829EB72130039024F /* SettingsLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659A62E729EB72130039024F /* SettingsLabelView.swift */; };
 		65B32BBE299AA2D9002AEED9 /* DeepSleepApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B32BBD299AA2D9002AEED9 /* DeepSleepApp.swift */; };
 		65B32BC0299AA2D9002AEED9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B32BBF299AA2D9002AEED9 /* ContentView.swift */; };
 		65B32BC2299AA2DA002AEED9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65B32BC1299AA2DA002AEED9 /* Assets.xcassets */; };
@@ -39,12 +39,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6528E12729EE188100A0C70F /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsRowView.swift; path = DeepSleep/App/SettingsRowView.swift; sourceTree = SOURCE_ROOT; };
 		653F270C29E6E4B00004FB75 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		6560708829A6A36900C188E5 /* InnerRectangleButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnerRectangleButtonView.swift; sourceTree = "<group>"; };
 		65664F6529EB78370090FC06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		657C7F8929E631B300E065A3 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		657C7F8B29E6B6C600E065A3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		659A62E729EB72130039024F /* SettingsLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabelView.swift; sourceTree = "<group>"; };
 		65A8F3B629A98CA80011C5CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		65B32BBA299AA2D9002AEED9 /* DeepSleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepSleep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65B32BBD299AA2D9002AEED9 /* DeepSleepApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepSleepApp.swift; sourceTree = "<group>"; };
@@ -87,12 +87,12 @@
 		656D5D8829B1346500179D50 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6528E12729EE188100A0C70F /* SettingsRowView.swift */,
 				65B32BBF299AA2D9002AEED9 /* ContentView.swift */,
 				65C5AF7E299C065D002D3F06 /* RectangleButtonView.swift */,
 				6560708829A6A36900C188E5 /* InnerRectangleButtonView.swift */,
 				657C7F8929E631B300E065A3 /* LaunchScreen.swift */,
 				653F270C29E6E4B00004FB75 /* LaunchView.swift */,
-				659A62E729EB72130039024F /* SettingsLabelView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -275,9 +275,9 @@
 				65C5AF7F299C065D002D3F06 /* RectangleButtonView.swift in Sources */,
 				65B9822729EB210C00D0C101 /* SettingsView.swift in Sources */,
 				6560708929A6A36900C188E5 /* InnerRectangleButtonView.swift in Sources */,
+				6528E12829EE188100A0C70F /* SettingsRowView.swift in Sources */,
 				65E36CD729B784CE006D953E /* ViewModel.swift in Sources */,
 				653F270D29E6E4B00004FB75 /* LaunchView.swift in Sources */,
-				659A62E829EB72130039024F /* SettingsLabelView.swift in Sources */,
 				65F8274D29B17D7F007CC823 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

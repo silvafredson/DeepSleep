@@ -39,7 +39,7 @@ struct LaunchView: View {
                 .onAppear {
                     withAnimation(.easeOut(duration: 1)) {
                         showLaunchView = false
-                        isImageAnimated.toggle()
+                        //isImageAnimated.toggle()
                     }
                 }
         }

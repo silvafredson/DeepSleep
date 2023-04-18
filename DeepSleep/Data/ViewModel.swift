@@ -62,19 +62,6 @@ class AudioStoreViewModel: ObservableObject {
         }
     }
     
-//    func setIsPlaying(for audio: Audio) {
-//        if let index = audios.firstIndex(of: audio) {
-//            for i in 0..<audios.count {
-//                if i != index {
-//                    audios[i].isPlaying = false
-//                    stopPlaying(audio: audios[i])
-//                }
-//            }
-//            audios[index].isPlaying = true
-//            startPlaying(audio: audios[index])
-//        }
-//    }
-    
     // MARK: - Play audio
     func startPlaying(audio: Audio) {
         
