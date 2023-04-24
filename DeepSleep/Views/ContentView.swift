@@ -36,7 +36,7 @@ struct ContentView: View {
                                             .padding(8)
                                             .modifier(Utils.IconModifier())
 
-                                        Text(audio.title)
+                                        Text(LocalizedStringKey(audio.title))
                                             .font(.system(size: 14, weight: .bold, design: .rounded))
                                             .bold()
                                             .foregroundColor(Utils.SavedColors.fontColor)
@@ -94,5 +94,6 @@ extension UINavigationController {
 struct ContenttView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environment(\.locale, .init(identifier: "pt-BR"))
     }
 }

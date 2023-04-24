@@ -10,9 +10,9 @@
 		6528E12829EE188100A0C70F /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6528E12729EE188100A0C70F /* SettingsRowView.swift */; };
 		653F270D29E6E4B00004FB75 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653F270C29E6E4B00004FB75 /* LaunchView.swift */; };
 		6560708929A6A36900C188E5 /* InnerRectangleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560708829A6A36900C188E5 /* InnerRectangleButtonView.swift */; };
-		65664F6429EB78370090FC06 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65664F6629EB78370090FC06 /* Localizable.strings */; };
 		657C7F8A29E631B300E065A3 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657C7F8929E631B300E065A3 /* LaunchScreen.swift */; };
 		657C7F8C29E6B6C600E065A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 657C7F8B29E6B6C600E065A3 /* LaunchScreen.storyboard */; };
+		659C512129F6DA0900168F1D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 659C512329F6DA0900168F1D /* Localizable.strings */; };
 		65B32BBE299AA2D9002AEED9 /* DeepSleepApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B32BBD299AA2D9002AEED9 /* DeepSleepApp.swift */; };
 		65B32BC0299AA2D9002AEED9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B32BBF299AA2D9002AEED9 /* ContentView.swift */; };
 		65B32BC2299AA2DA002AEED9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65B32BC1299AA2DA002AEED9 /* Assets.xcassets */; };
@@ -42,16 +42,16 @@
 		6528E12729EE188100A0C70F /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsRowView.swift; path = DeepSleep/App/SettingsRowView.swift; sourceTree = SOURCE_ROOT; };
 		653F270C29E6E4B00004FB75 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		6560708829A6A36900C188E5 /* InnerRectangleButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnerRectangleButtonView.swift; sourceTree = "<group>"; };
-		65664F6529EB78370090FC06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		657C7F8929E631B300E065A3 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		657C7F8B29E6B6C600E065A3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		659C512229F6DA0900168F1D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		659C512429F6DA0A00168F1D /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		65A8F3B629A98CA80011C5CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		65B32BBA299AA2D9002AEED9 /* DeepSleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeepSleep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65B32BBD299AA2D9002AEED9 /* DeepSleepApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepSleepApp.swift; sourceTree = "<group>"; };
 		65B32BBF299AA2D9002AEED9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		65B32BC1299AA2DA002AEED9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65B32BC4299AA2DA002AEED9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		65B6607129EB8EAD00B38393 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		65B8CC6C299E2A4100E1FB44 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		65B9822629EB210C00D0C101 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		65BC226329D7A94C0082C401 /* Ocean.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ocean.caf; sourceTree = "<group>"; };
@@ -138,10 +138,10 @@
 		65B9822429EB20B100D0C101 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				65664F6629EB78370090FC06 /* Localizable.strings */,
 				65B32BBD299AA2D9002AEED9 /* DeepSleepApp.swift */,
 				65B9822629EB210C00D0C101 /* SettingsView.swift */,
 				657C7F8B29E6B6C600E065A3 /* LaunchScreen.storyboard */,
+				659C512329F6DA0900168F1D /* Localizable.strings */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -253,7 +253,7 @@
 				65BC227129D7A94E0082C401 /* Ocean.caf in Resources */,
 				65BC227329D7A94E0082C401 /* Fire.caf in Resources */,
 				65BC227529D7A94E0082C401 /* Forest River.caf in Resources */,
-				65664F6429EB78370090FC06 /* Localizable.strings in Resources */,
+				659C512129F6DA0900168F1D /* Localizable.strings in Resources */,
 				65BC227429D7A94E0082C401 /* Rain Wind.caf in Resources */,
 				65BC227E29D7A94E0082C401 /* Running Water.caf in Resources */,
 				65BC227929D7A94E0082C401 /* Uterus.caf in Resources */,
@@ -285,14 +285,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		65664F6629EB78370090FC06 /* Localizable.strings */ = {
+		659C512329F6DA0900168F1D /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				65664F6529EB78370090FC06 /* en */,
-				65B6607129EB8EAD00B38393 /* pt-BR */,
+				659C512229F6DA0900168F1D /* en */,
+				659C512429F6DA0A00168F1D /* pt-BR */,
 			);
 			name = Localizable.strings;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 

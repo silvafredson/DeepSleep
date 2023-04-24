@@ -1,0 +1,58 @@
+/* 
+  Localizable.strings
+  DeepSleep
+
+  Created by Fredson Silva on 24/04/23.
+  
+*/
+
+
+"white Noise" = "White Noise";
+
+"pink Noise" = "Pink Noise";
+
+"nature" = "Nature";
+
+"running Water" = "Running Water";
+
+"fire" = "Fire";
+
+"airplane Cabin" = "Airplane Cabin";
+
+"rain" = "Rain";
+
+"waterfall" = "Waterfall";
+
+"uterus" = "Uterus";
+
+"forest River" = "Forest River";
+
+"ocean" = "Ocean";
+
+"rain Wind" = "Rain Wind";
+
+"tornado" = "Tornado";
+
+"windy" = "Windy";
+
+"what is white noise?" = "What Is White Noise";
+
+"white noise refers to a noise that contains all frequencies across the spectrum of audible sound in equal measure. Because white noise spans multiple bands of sound, it is sometimes referred to as broadband noise. Anecdotally, people often liken white noise to the static that comes from an untuned radio or television. Researchers have studied the effect of white noise on humans for many years, finding evidence it can reduce crying in infants, improve work performance, and potentially help counteract symptoms of attention deficit hyperactivity disorder (ADHD). Multiple studies have also examined how white noise may affect human sleep." = "White noise refers to a noise that contains all frequencies across the spectrum of audible sound in equal measure. Because white noise spans multiple bands of sound, it is sometimes referred to as broadband noise. Anecdotally, people often liken white noise to the static that comes from an untuned radio or television. Researchers have studied the effect of white noise on humans for many years, finding evidence it can reduce crying in infants, improve work performance, and potentially help counteract symptoms of attention deficit hyperactivity disorder (ADHD). Multiple studies have also examined how white noise may affect human sleep.";
+
+"white Noise vs. Pink Noise" = "White Noise vs. Pink Noise";
+
+// About Pink Noise
+
+"like white noise, pink noise is a broadband sound containing components from across the sound spectrum. Pink noise contains sounds within each octave, but the power of its frequencies decreases by three decibels with each higher octave. As a result, pink noise sounds lower pitched than white noise. Researchers have compared the sound of pink noise to the noise produced by a waterfall. Studies have found that pink noise can enhance deep sleep in older adults and improve cognitive performance." = "Like white noise, pink noise is a broadband sound containing components from across the sound spectrum. Pink noise contains sounds within each octave, but the power of its frequencies decreases by three decibels with each higher octave. As a result, pink noise sounds lower pitched than white noise. Researchers have compared the sound of pink noise to the noise produced by a waterfall. Studies have found that pink noise can enhance deep sleep in older adults and improve cognitive performance.";
+
+"sounds From Nature" = "Sounds From Nature";
+
+"hearing rain, ocean waves, wind, and other natural sounds helps some people fall asleep." = "Hearing rain, ocean waves, wind, and other natural sounds helps some people fall asleep.";
+
+
+
+
+
+"source" = "Source";
+"developer" = "Developer";
+"about" = "About";

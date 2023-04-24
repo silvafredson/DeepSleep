@@ -1,0 +1,56 @@
+/* 
+  Localizable.strings
+  DeepSleep
+
+  Created by Fredson Silva on 24/04/23.
+  
+*/
+
+
+"white Noise" = "Ruído Branco";
+
+"pink Noise" = "Ruído Rosa";
+
+"nature" = "Natureza";
+
+"running Water" = "Água Corrente";
+
+"fire" = "Fogo";
+
+"airplane Cabin" = "Cabine de Avião";
+
+"rain" = "Chuva";
+
+"waterfall" = "Gueda D'água";
+
+"uterus" = "Útero";
+
+"forest River" = "Rio";
+
+"ocean" = "Oceano";
+
+"rain Wind" = "Chuva de Vento";
+
+"tornado" = "Tornado";
+
+"windy" = "Ventania";
+
+"what Is White Noise?" = "O que é Ruído Branco?";
+
+"white noise refers to a noise that contains all frequencies across the spectrum of audible sound in equal measure. Because white noise spans multiple bands of sound, it is sometimes referred to as broadband noise. Anecdotally, people often liken white noise to the static that comes from an untuned radio or television. Researchers have studied the effect of white noise on humans for many years, finding evidence it can reduce crying in infants, improve work performance, and potentially help counteract symptoms of attention deficit hyperactivity disorder (ADHD). Multiple studies have also examined how white noise may affect human sleep." = "O ruído branco refere-se a um ruído que contém todas as frequências em todo o espectro do som audível em igual medida. Como o ruído branco abrange várias bandas de som, às vezes é chamado de ruído de banda larga. Curiosamente, as pessoas costumam comparar o ruído branco à estática que vem de um rádio ou televisão não sintonizados. Os pesquisadores estudaram o efeito do ruído branco em humanos por muitos anos, encontrando evidências de que ele pode reduzir o choro em bebês, melhorar o desempenho no trabalho e potencialmente ajudar a neutralizar os sintomas do transtorno de déficit de atenção e hiperatividade (TDAH). Vários estudos também examinaram como o ruído branco pode afetar o sono humano.";
+
+"white Noise vs. Pink Noise" = "Ruído Branco vs. Ruído Rosa";
+
+// About Pink Noise
+
+"like white noise, pink noise is a broadband sound containing components from across the sound spectrum. Pink noise contains sounds within each octave, but the power of its frequencies decreases by three decibels with each higher octave. As a result, pink noise sounds lower pitched than white noise. Researchers have compared the sound of pink noise to the noise produced by a waterfall. Studies have found that pink noise can enhance deep sleep in older adults and improve cognitive performance." = "Assim como o ruído branco, o ruído rosa é um som de banda larga que contém componentes de todo o espectro sonoro. O ruído rosa contém sons dentro de cada oitava, mas a potência de suas frequências diminui em três decibéis a cada oitava mais alta. Como resultado, o ruído rosa soa mais baixo do que o ruído branco. Os pesquisadores compararam o som do ruído rosa ao ruído produzido por uma cachoeira. Estudos descobriram que o ruído rosa pode melhorar o sono profundo em adultos mais velhos e melhorar o desempenho cognitivo.";
+
+"sounds From Nature" = "Sons da Natureza";
+
+"hearing rain, ocean waves, wind, and other natural sounds helps some people fall asleep." = "Ouvir sons de chuva, ondas do mar, vento e outros sons naturais ajuda algumas pessoas a adormecer.";
+
+
+
+"source" = "Fonte";
+"developer" = "Desenvolvedor";
+"about" = "Sobre";

@@ -9,20 +9,20 @@ import AVFoundation
 import MediaPlayer
 
 let audiosData: [Audio] = [
-    Audio(title: "White Noise", iconName: "White Noise", audioFileName: "White Noise"), // 1
-    Audio(title: "Pink Noise", iconName: "Pink Noise", audioFileName: "Pink Noise"), // 2
-    Audio(title: "Nature", iconName: "Nature", audioFileName: "Nature"), // 3
-    Audio(title: "Running Water", iconName: "Running Water", audioFileName: "Running Water"), // 4
-    Audio(title: "Fire", iconName: "Fire", audioFileName: "Fire"), // 5
-    Audio(title: "Airplane Cabin", iconName: "Airplane Cabin", audioFileName: "Airplane Cabin"), // 6
-    Audio(title: "Rain", iconName: "Rain", audioFileName: "Rain"), // 7
-    Audio(title: "Waterfall", iconName: "Waterfall", audioFileName: "Waterfall"), // 8
-    Audio(title: "Uterus", iconName: "Heart", audioFileName: "Uterus"), // 9
-    Audio(title: "Forest River", iconName: "Forest River", audioFileName: "Forest River"), // 10
-    Audio(title: "Ocean", iconName: "Ocean", audioFileName: "Ocean"), // 11
-    Audio(title: "Rain Wind", iconName: "Rain Wind", audioFileName: "Rain Wind"), // 12
-    Audio(title: "Tornado", iconName: "Tornado", audioFileName: "Tornado"), // 13
-    Audio(title: "Wind", iconName: "Wind", audioFileName: "Wind"), // 14
+    Audio(title: "white Noise", iconName: "White Noise", audioFileName: "White Noise"), // 1
+    Audio(title: "pink Noise", iconName: "Pink Noise", audioFileName: "Pink Noise"), // 2
+    Audio(title: "nature", iconName: "Nature", audioFileName: "Nature"), // 3
+    Audio(title: "running Water", iconName: "Running Water", audioFileName: "Running Water"), // 4
+    Audio(title: "fire", iconName: "Fire", audioFileName: "Fire"), // 5
+    Audio(title: "airplane Cabin", iconName: "Airplane Cabin", audioFileName: "Airplane Cabin"), // 6
+    Audio(title: "rain", iconName: "Rain", audioFileName: "Rain"), // 7
+    Audio(title: "waterfall", iconName: "Waterfall", audioFileName: "Waterfall"), // 8
+    Audio(title: "uterus", iconName: "Heart", audioFileName: "Uterus"), // 9
+    Audio(title: "forest River", iconName: "Forest River", audioFileName: "Forest River"), // 10
+    Audio(title: "ocean", iconName: "Ocean", audioFileName: "Ocean"), // 11
+    Audio(title: "rain Wind", iconName: "Rain Wind", audioFileName: "Rain Wind"), // 12
+    Audio(title: "tornado", iconName: "Tornado", audioFileName: "Tornado"), // 13
+    Audio(title: "windy", iconName: "Wind", audioFileName: "Wind"), // 14
 ]
 
 class AudioStoreViewModel: ObservableObject {
