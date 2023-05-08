@@ -33,10 +33,15 @@ struct SettingsRowView: View {
     }
 }
 
+
+
 struct SettingsRowView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             SettingsRowView(name: "Developer", content: "Fredson Silva")
+                .previewLayout(.fixed(width: 375, height: 60))
+                .padding()
+            SettingsRowView(name: "Versoin", content: "CFBundleShortVersionString")
                 .previewLayout(.fixed(width: 375, height: 60))
                 .padding()
             SettingsRowView(name: "Source", linkLabel: "Sleep Foundation", linkDestination: "www.sleepfoundation.org/noise-and-sleep/white-noise#:~:text=Researchers%20have%20studied%20the%20effect,View%20Source%20.")

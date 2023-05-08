@@ -86,12 +86,16 @@ struct SettingsView: View {
                             
                             
                             SettingsRowView(name: "developer", linkLabel: "Fredson Silva", linkDestination: "www.linkedin.com/in/silvafredson/")
+                            
+                            //SettingsRowView(name: "version", content: appVersion)
                            
                             
                         }
                         //.modifier(Utils.InfoShadowModifier())
                         
                         // MARK: - Section 3
+                        
+                        
                     } // VStack
                     .navigationTitle(Text("Info"))
                     .padding()
@@ -101,6 +105,13 @@ struct SettingsView: View {
         }
     }
 }
+// MARK: - To get App version
+extension UIApplication {
+    static var appVersion: String? {
+        return Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String
+    }
+}
+
 
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {

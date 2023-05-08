@@ -26,7 +26,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iLS-cK-WXq">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="UIf-Jm-UKe">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen2" translatesAutoresizingMaskIntoConstraints="NO" id="UIf-Jm-UKe">
                                         <rect key="frame" x="126.66666666666669" y="309.66666666666669" width="140" height="140"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="140" id="TxV-NY-itm"/>
@@ -40,7 +40,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.1676149368" green="0.1819773912" blue="0.21642902489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="4bK-Ax-gL0" firstAttribute="centerX" secondItem="iLS-cK-WXq" secondAttribute="centerX" id="1UU-If-U5y"/>
                                     <constraint firstItem="4bK-Ax-gL0" firstAttribute="leading" secondItem="iLS-cK-WXq" secondAttribute="leading" constant="120" id="69g-V6-P57"/>
@@ -52,7 +52,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
-                        <color key="backgroundColor" name="bgColor"/>
+                        <color key="backgroundColor" red="0.96862739320000002" green="0.96862739320000002" blue="0.96862739320000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Bcu-3y-fUS" firstAttribute="centerX" secondItem="obG-Y5-kRd" secondAttribute="centerX" id="5cz-MP-9tL"/>
                             <constraint firstItem="obG-Y5-kRd" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" symbolic="YES" id="SfN-ll-jLj"/>
@@ -70,10 +70,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LaunchScreen" width="1024" height="1024"/>
-        <namedColor name="bgColor">
-            <color red="0.87099999189376831" green="0.9179999828338623" blue="0.9649999737739563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
+        <image name="LaunchScreen2" width="1600" height="1581"/>
         <namedColor name="fontColor">
             <color red="0.0" green="0.32499998807907104" blue="0.57300001382827759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
