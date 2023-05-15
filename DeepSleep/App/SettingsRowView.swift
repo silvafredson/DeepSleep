@@ -18,7 +18,7 @@ struct SettingsRowView: View {
         VStack {
             Divider().padding(.vertical, 4)
             HStack {
-                Text(LocalizedStringKey (name)).foregroundColor(.gray)
+                Text(LocalizedStringKey(name)).foregroundColor(.gray)
                 Spacer()
                 if (content != nil) {
                     Text(content ?? "")
