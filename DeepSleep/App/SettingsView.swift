@@ -31,7 +31,7 @@ struct SettingsView: View {
                             Divider().padding(.vertical, 4)
                             VStack {
                                 VStack {
-                                    Text(LocalizedStringKey("\"white noise refers to a noise that contains all frequencies across the spectrum of audible sound in equal measure. Because white noise spans multiple bands of sound, it is sometimes referred to as broadband noise. Anecdotally, people often liken white noise to the static that comes from an untuned radio or television. Researchers have studied the effect of white noise on humans for many years, finding evidence it can reduce crying in infants, improve work performance, and potentially help counteract symptoms of attention deficit hyperactivity disorder (ADHD). Multiple studies have also examined how white noise may affect human sleep.\"")).multilineTextAlignment(.center)
+                                    Text(LocalizedStringKey("white noise refers to a noise that contains all frequencies across the spectrum of audible sound in equal measure. Because white noise spans multiple bands of sound, it is sometimes referred  to as broadband noise. Anecdotally, people often liken white noise to the static that comes from an untuned radio or television. Researchers have studied the effect of white noise on humans for many years, finding evidence it can reduce crying in infants, improve work performance, and potentially help counteract symptoms of attention deficit hyperactivity disorder (ADHD). Multiple studies have also examined how white noise may affect human sleep."))//.multilineTextAlignment(.center)
                                     
                                 }
                                 
@@ -49,7 +49,7 @@ struct SettingsView: View {
                                     }
                                     .padding(.vertical, 4)
                                     
-                                    Text(LocalizedStringKey("\"like white noise, pink noise is a broadband sound containing components from across the sound spectrum. Pink noise contains sounds within each octave, but the power of its frequencies decreases by three decibels with each higher octave. As a result, pink noise sounds lower pitched than white noise. Researchers have compared the sound of pink noise to the noise produced by a waterfall. Studies have found that pink noise can enhance deep sleep in older adults and improve cognitive performance.\"")).multilineTextAlignment(.center)
+                                    Text(LocalizedStringKey("like white noise, pink noise is a broadband sound containing components from across the sound spectrum. Pink noise contains sounds within each octave, but the power of its frequencies decreases by three decibels with each higher octave. As a result, pink noise sounds lower pitched than white noise. Researchers have compared the sound of pink noise to the noise produced by a waterfall. Studies have found that pink noise can enhance deep sleep in older adults and improve cognitive performance."))//.multilineTextAlignment(.center)
                                 } // VStack
                                 Divider().padding(.vertical, 4)
                                 
@@ -64,7 +64,7 @@ struct SettingsView: View {
                                 .padding(.vertical, 4)
                                 
                                 VStack {
-                                    Text(LocalizedStringKey("\"a recently published study from Carleton University’s Rachel Buxton, research scientist in the Department of Biology, and researchers from Michigan State University, Colorado State University and the National Park Service analyzed studies on the outcomes of listening to natural sounds and found striking human health benefits. Wolves howling, birds singing, rain falling—natural sounds inspire people and connect them to nature and this new research shows these sounds are also good for our health. The team found people who experienced the sounds of nature felt decreased pain, lower stress, improved mood and enhanced cognitive performance. The sounds of water were most effective at improving positive emotions and health outcomes, while bird sounds combat stress and annoyance.\"")).multilineTextAlignment(.center)
+                                    Text(LocalizedStringKey("a recently published study from Carleton University’s Rachel Buxton, research scientist in the Department of Biology, and researchers from Michigan State University, Colorado State University and the National Park Service analyzed studies on the outcomes of listening to natural sounds and found striking human health benefits. Wolves howling, birds singing, rain falling—natural sounds inspire people and connect them to nature and this new research shows these sounds are also good for our health. The team found people who experienced the sounds of nature felt decreased pain, lower stress, improved mood and enhanced cognitive performance. The sounds of water were most effective at improving positive emotions and health outcomes, while bird sounds combat stress and annoyance."))//.multilineTextAlignment(.center)
                                 }
                                 
                                 // MARK: - Source
@@ -118,6 +118,5 @@ struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
         SettingsView()
             //.preferredColorScheme(.dark)
-            .environment(\.locale, .init(identifier: "pt-BR"))
     }
 }
