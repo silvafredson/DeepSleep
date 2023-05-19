@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Foundation
 
 struct Utils {
     
@@ -57,6 +58,77 @@ struct Utils {
                         .clipShape(RoundedRectangle(cornerRadius: radius))
                 )
         }
+    }
+    
+    struct GetAppVersion {
+        
+//        struct Test {
+//
+//            var config: [String: Any]?
+//
+//            if let infoPlistPath = Bundle.main.url(forResource: "Info", withExtension: "plist") {
+//                do {
+//                    let infoPlistData = try Data(contentsOf: infoPlistPath)
+//
+//                    if let dict = try PropertyListSerialization.propertyList(from: infoPlistData, options: [], format: nil) as? [String: Any] {
+//                        config = dict
+//                    }
+//                } catch {
+//                    print(error)
+//                }
+//            }
+//
+//                print(config?["CFBundleName"])
+//                // Optional(example-info)
+//
+//                print(config?["CFBundleVersion"])
+//                // Optional(1)
+//
+//                print(config?["CFBundleShortVersionString"])
+//                // Optional(1.0)
+//        }
+        
+        
+//        func test() {
+//
+//            let buildNumber = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String
+//
+//            if let appVersion = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String {
+//                print("App version: \(appVersion)")
+//            } else {
+//                print("your platform does not support this feature.")
+//            }
+//            if let buildNumber = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String {
+//                print("Build number: \(buildNumber)")
+//            } else {
+//                print("your platform does not support this feature.")
+//            }
+//        }
+        
+        
+//        func getVersion() -> String {
+//
+//            let kVersion = "version"
+//
+//            let dictionary = Bundle.main.infoDictionary!
+//            let version = dictionary[kVersion] as! String
+//
+//            //let buildNumber = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String
+//
+//            if let appVersion = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String {
+//                print("App version: \(appVersion)")
+//            } else {
+//                print("your platform does not support this feature.")
+//            }
+//
+//            if let buildNumber = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String {
+//                print("Build number: \(buildNumber)")
+//            } else {
+//                print("your platform does not support this feature.")
+//            }
+//
+//            return version
+//        }
     }
 }
 

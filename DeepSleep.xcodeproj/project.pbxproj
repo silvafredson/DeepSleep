@@ -36,7 +36,6 @@
 		65C5AF7F299C065D002D3F06 /* RectangleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C5AF7E299C065D002D3F06 /* RectangleButtonView.swift */; };
 		65E36CD729B784CE006D953E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E36CD629B784CE006D953E /* ViewModel.swift */; };
 		65F8274D29B17D7F007CC823 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F8274C29B17D7F007CC823 /* Utils.swift */; };
-		F92B42ED2A095567007B0ED1 /* AppVersionFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92B42EC2A095567007B0ED1 /* AppVersionFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,7 +71,6 @@
 		65C5AF7E299C065D002D3F06 /* RectangleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleButtonView.swift; sourceTree = "<group>"; };
 		65E36CD629B784CE006D953E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		65F8274C29B17D7F007CC823 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		F92B42EC2A095567007B0ED1 /* AppVersionFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVersionFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,7 +152,6 @@
 				65F8274C29B17D7F007CC823 /* Utils.swift */,
 				65B8CC6C299E2A4100E1FB44 /* Model.swift */,
 				65E36CD629B784CE006D953E /* ViewModel.swift */,
-				F92B42EC2A095567007B0ED1 /* AppVersionFile.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -277,7 +274,6 @@
 				65B32BBE299AA2D9002AEED9 /* DeepSleepApp.swift in Sources */,
 				65C5AF7F299C065D002D3F06 /* RectangleButtonView.swift in Sources */,
 				65B9822729EB210C00D0C101 /* SettingsView.swift in Sources */,
-				F92B42ED2A095567007B0ED1 /* AppVersionFile.swift in Sources */,
 				6560708929A6A36900C188E5 /* InnerRectangleButtonView.swift in Sources */,
 				6528E12829EE188100A0C70F /* SettingsRowView.swift in Sources */,
 				65E36CD729B784CE006D953E /* ViewModel.swift in Sources */,

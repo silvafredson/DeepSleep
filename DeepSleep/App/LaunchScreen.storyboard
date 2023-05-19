@@ -26,7 +26,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iLS-cK-WXq">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen2" translatesAutoresizingMaskIntoConstraints="NO" id="UIf-Jm-UKe">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="App Fredson" translatesAutoresizingMaskIntoConstraints="NO" id="UIf-Jm-UKe">
                                         <rect key="frame" x="126.66666666666669" y="309.66666666666669" width="140" height="140"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="140" id="TxV-NY-itm"/>
@@ -70,7 +70,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LaunchScreen2" width="1600" height="1581"/>
+        <image name="App Fredson" width="1620" height="1620"/>
         <namedColor name="fontColor">
             <color red="0.0" green="0.32499998807907104" blue="0.57300001382827759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

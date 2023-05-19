@@ -102,7 +102,7 @@ class AudioStoreViewModel: ObservableObject {
         var nowPlayingInfo = [String : Any]()
         
         nowPlayingInfo[MPMediaItemPropertyTitle] = audio.title
-        //nowPlayingInfo[MPMediaItemPropertyArtwork] = audio.iconName
+        //nowPlayingInfo[MPMediaItemPropertyArtwork] = audio.
         
         MPNowPlayingInfoCenter.default().nowPlayingInfo = nowPlayingInfo
         MPNowPlayingInfoCenter.default().playbackState = .playing
@@ -146,7 +146,7 @@ class AudioStoreViewModel: ObservableObject {
             }
             
         } catch let error {
-            print("Erro setting the AVAudioSession: \(error.localizedDescription)")//
+            print("Erro setting the AVAudioSession: \(error.localizedDescription)")
         }
     }
 }
