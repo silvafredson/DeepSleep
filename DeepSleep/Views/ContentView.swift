@@ -94,6 +94,6 @@ extension UINavigationController {
 struct ContenttView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .environment(\.locale, .init(identifier: "pt-BR"))
+            //.environment(\.locale, .init(identifier: "pt-BR"))
     }
 }

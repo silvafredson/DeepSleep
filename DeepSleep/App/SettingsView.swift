@@ -107,11 +107,11 @@ struct SettingsView: View {
     }
 }
 // MARK: - To get App version
-extension UIApplication {
-    static var appVersion: String? {
-        return Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String
-    }
-}
+//extension UIApplication {
+//    static var appVersion: String? {
+//        return Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String
+//    }
+//}
 
 
 struct SettingsView_Previews: PreviewProvider {

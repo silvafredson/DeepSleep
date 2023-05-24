@@ -16,7 +16,6 @@ struct LaunchView: View {
     var body: some View {
         ZStack {
             (Utils.SavedColors.bgColor).ignoresSafeArea()
-            
                 ZStack {
                     if isImageAnimated {
                         ZStack {

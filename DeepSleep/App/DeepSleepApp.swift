@@ -17,12 +17,12 @@ struct DeepSleepApp: App {
             ZStack {
                 ContentView()
                 
-                ZStack {
-                    if showLaunchView {
-                        LaunchView(showLaunchView: $showLaunchView)
-                    }
-                }
-                .zIndex(2.0)
+//                ZStack {
+//                    if showLaunchView {
+//                        LaunchView(showLaunchView: $showLaunchView)
+//                    }
+//                }
+//                .zIndex(2.0)
             }
         }
     }
