@@ -10,12 +10,13 @@ import UIKit
 
 struct SettingsView: View {
     
+    //@State var vibrationIsOn = true
+    
     var body: some View {
         ZStack {
             (Utils.SavedColors.bgColor).ignoresSafeArea()
             //NavigationView {
                 ScrollView(.vertical, showsIndicators: false) {
-                    
                     VStack(spacing: 20) {
                         // MARK: - Section 1
                         GroupBox(
@@ -34,7 +35,6 @@ struct SettingsView: View {
                                     Text(LocalizedStringKey("white noise refers to a noise that contains all frequencies across the spectrum of audible sound in equal measure. Because white noise spans multiple bands of sound, it is sometimes referred  to as broadband noise. Anecdotally, people often liken white noise to the static that comes from an untuned radio or television. Researchers have studied the effect of white noise on humans for many years, finding evidence it can reduce crying in infants, improve work performance, and potentially help counteract symptoms of attention deficit hyperactivity disorder (ADHD). Multiple studies have also examined how white noise may affect human sleep."))//.multilineTextAlignment(.center)
                                     
                                 }
-                                
                                 
                                 // MARK: - White Noise vs. Pink Noise
                                 Divider().padding(.vertical, 4)
@@ -78,6 +78,16 @@ struct SettingsView: View {
                         GroupBox(
                             label:
                                 HStack {
+                                    Toggle("Vibration", isOn: .constant(true)).foregroundColor(Utils.SavedColors.fontColor)
+                                }
+                        ) {
+                            
+                        }
+                        
+                        // MARK: - Section 3
+                        GroupBox(
+                            label:
+                                HStack {
                                     Text(LocalizedStringKey("about")).fontWeight(.bold)
                                         .foregroundColor(Utils.SavedColors.fontColor)
                                     Spacer()
@@ -94,9 +104,6 @@ struct SettingsView: View {
                         }
                         //.modifier(Utils.InfoShadowModifier())
                         
-                        // MARK: - Section 3
-                        
-                        
                     } // VStack
                     .navigationTitle(Text("Info"))
                     .padding()
@@ -112,11 +119,9 @@ struct SettingsView: View {
 //        return Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String
 //    }
 //}
-
-
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
         SettingsView()
-            //.preferredColorScheme(.dark)
+            //.preferredColorScheme(.light)
     }
 }

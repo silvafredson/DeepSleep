@@ -35,6 +35,7 @@
 		65BC227E29D7A94E0082C401 /* Running Water.caf in Resources */ = {isa = PBXBuildFile; fileRef = 65BC227029D7A94E0082C401 /* Running Water.caf */; };
 		65C5AF7F299C065D002D3F06 /* RectangleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C5AF7E299C065D002D3F06 /* RectangleButtonView.swift */; };
 		65E36CD729B784CE006D953E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E36CD629B784CE006D953E /* ViewModel.swift */; };
+		65EF6A2D2A243325006D94C0 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65EF6A2C2A243325006D94C0 /* HapticsManager.swift */; };
 		65F8274D29B17D7F007CC823 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F8274C29B17D7F007CC823 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,7 @@
 		65BC227029D7A94E0082C401 /* Running Water.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Running Water.caf"; sourceTree = "<group>"; };
 		65C5AF7E299C065D002D3F06 /* RectangleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleButtonView.swift; sourceTree = "<group>"; };
 		65E36CD629B784CE006D953E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		65EF6A2C2A243325006D94C0 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
 		65F8274C29B17D7F007CC823 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +89,7 @@
 		656D5D8829B1346500179D50 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				65B9822629EB210C00D0C101 /* SettingsView.swift */,
 				6528E12729EE188100A0C70F /* SettingsRowView.swift */,
 				65B32BBF299AA2D9002AEED9 /* ContentView.swift */,
 				65C5AF7E299C065D002D3F06 /* RectangleButtonView.swift */,
@@ -139,7 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				65B32BBD299AA2D9002AEED9 /* DeepSleepApp.swift */,
-				65B9822629EB210C00D0C101 /* SettingsView.swift */,
+				65EF6A2C2A243325006D94C0 /* HapticsManager.swift */,
 				657C7F8B29E6B6C600E065A3 /* LaunchScreen.storyboard */,
 				659C512329F6DA0900168F1D /* Localizable.strings */,
 			);
@@ -278,6 +281,7 @@
 				6528E12829EE188100A0C70F /* SettingsRowView.swift in Sources */,
 				65E36CD729B784CE006D953E /* ViewModel.swift in Sources */,
 				653F270D29E6E4B00004FB75 /* LaunchView.swift in Sources */,
+				65EF6A2D2A243325006D94C0 /* HapticsManager.swift in Sources */,
 				65F8274D29B17D7F007CC823 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
