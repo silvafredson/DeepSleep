@@ -19,5 +19,7 @@ fileprivate final class HapticsManager {
 }
 
 func haptics(_ vibration: UIImpactFeedbackGenerator) {
-    HapticsManager.shared.trigger(vibration)
+    if UserDefaults.standard.bool(forKey: UserDefaultKeys.hapticsEnabled){
+        HapticsManager.shared.trigger(vibration)
+    }
 }
