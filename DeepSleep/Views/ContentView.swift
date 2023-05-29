@@ -12,7 +12,6 @@ import UIKit
 struct ContentView: View {
     
     @StateObject var audioStored = AudioStoreViewModel(audios: audiosData)
-    //@State var hapticImpact = UIImpactFeedbackGenerator(style: .medium)
     
     var body: some View {
         
@@ -49,8 +48,6 @@ struct ContentView: View {
                                     withAnimation(.easeOut(duration: 0.4)) {
                                         audioStored.toggleIsPlaying(for: audio)
                                         haptics(UIImpactFeedbackGenerator(style: .medium))
-                                        //self.hapticImpact.impactOccurred()
-                                        
                                     }
                                 }
 //                                .onChange(of: audio.isPlaying) { newValue in

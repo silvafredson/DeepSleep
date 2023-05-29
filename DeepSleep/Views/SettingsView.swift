@@ -11,6 +11,7 @@ import UIKit
 struct SettingsView: View {
     
     //@State var vibrationIsOn = true
+    @AppStorage(UserDefaultKeys.hapticsEnabled) private var isHapticsEnabled = true
     
     var body: some View {
         ZStack {
@@ -78,7 +79,7 @@ struct SettingsView: View {
                         GroupBox(
                             label:
                                 HStack {
-                                    Toggle("Vibration", isOn: .constant(true)).foregroundColor(Utils.SavedColors.fontColor)
+                                    Toggle("Vibration", isOn: $isHapticsEnabled).foregroundColor(Utils.SavedColors.fontColor)
                                 }
                         ) {
                             
