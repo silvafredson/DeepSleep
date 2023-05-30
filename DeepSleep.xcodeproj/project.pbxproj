@@ -145,9 +145,9 @@
 			children = (
 				65B32BBD299AA2D9002AEED9 /* DeepSleepApp.swift */,
 				65EF6A2C2A243325006D94C0 /* HapticsManager.swift */,
+				65F0B02A2A24DCE5006A37D6 /* UserDefaultKeys.swift */,
 				657C7F8B29E6B6C600E065A3 /* LaunchScreen.storyboard */,
 				659C512329F6DA0900168F1D /* Localizable.strings */,
-				65F0B02A2A24DCE5006A37D6 /* UserDefaultKeys.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";

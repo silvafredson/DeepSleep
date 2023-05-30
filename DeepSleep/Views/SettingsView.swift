@@ -10,7 +10,6 @@ import UIKit
 
 struct SettingsView: View {
     
-    //@State var vibrationIsOn = true
     @AppStorage(UserDefaultKeys.hapticsEnabled) private var isHapticsEnabled = true
     
     var body: some View {
@@ -79,7 +78,9 @@ struct SettingsView: View {
                         GroupBox(
                             label:
                                 HStack {
-                                    Toggle(LocalizedStringKey("haptic Feedback"), isOn: $isHapticsEnabled).foregroundColor(Utils.SavedColors.fontColor)
+                                    Toggle(LocalizedStringKey("haptic Feedback"), isOn: $isHapticsEnabled)
+                                        .foregroundColor(Utils.SavedColors.fontColor)
+                                        .toggleStyle(SwitchToggleStyle(tint: Utils.SavedColors.fontColor))
                                 }
                         ) {
                             
@@ -124,6 +125,6 @@ struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
         SettingsView()
             //.preferredColorScheme(.light)
-            .environment(\.locale, .init(identifier: "pt-BR"))
+            //.environment(\.locale, .init(identifier: "pt-BR"))
     }
 }

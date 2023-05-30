@@ -17,12 +17,12 @@ let audiosData: [Audio] = [
     Audio(title: "airplane Cabin", iconName: "Airplane Cabin", audioFileName: "Airplane Cabin"), // 6
     Audio(title: "rain", iconName: "Rain", audioFileName: "Rain"), // 7
     Audio(title: "waterfall", iconName: "Waterfall", audioFileName: "Waterfall"), // 8
-    Audio(title: "uterus", iconName: "Heart", audioFileName: "Uterus"), // 9
+    Audio(title: "uterus", iconName: "Uterus", audioFileName: "Uterus"), // 9
     Audio(title: "forest River", iconName: "Forest River", audioFileName: "Forest River"), // 10
     Audio(title: "ocean", iconName: "Ocean", audioFileName: "Ocean"), // 11
     Audio(title: "rain Wind", iconName: "Rain Wind", audioFileName: "Rain Wind"), // 12
     Audio(title: "tornado", iconName: "Tornado", audioFileName: "Tornado"), // 13
-    Audio(title: "windy", iconName: "Wind", audioFileName: "Wind"), // 14
+    Audio(title: "windy", iconName: "Windy", audioFileName: "Wind"), // 14
 ]
 
 class AudioStoreViewModel: ObservableObject {
@@ -101,8 +101,15 @@ class AudioStoreViewModel: ObservableObject {
     func setupNowPlaying(for audio: Audio) {
         var nowPlayingInfo = [String : Any]()
         
-        nowPlayingInfo[MPMediaItemPropertyTitle] = audio.title
-        //nowPlayingInfo[MPMediaItemPropertyArtwork] = audio.
+        nowPlayingInfo[MPMediaItemPropertyTitle] = audio.id
+        nowPlayingInfo[MPMediaItemPropertyAlbumTitle] = audio.iconName
+        //nowPlayingInfo[MPMediaItemProperty] = "AppIcon"
+        
+//        if let image = UIImage(named: "LaunchScreen") { 
+//            nowPlayingInfo[MPMediaItemPropertyArtwork] = MPMediaItemArtwork(boundsSize: image.size) { size in
+//                return image
+//            }
+//        }
         
         MPNowPlayingInfoCenter.default().nowPlayingInfo = nowPlayingInfo
         MPNowPlayingInfoCenter.default().playbackState = .playing
