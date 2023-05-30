@@ -10,6 +10,7 @@ import UIKit
 
 struct SettingsView: View {
     
+    //@State var vibrationIsOn = true
     @AppStorage(UserDefaultKeys.hapticsEnabled) private var isHapticsEnabled = true
     
     var body: some View {
