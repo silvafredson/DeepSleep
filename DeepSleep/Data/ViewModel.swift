@@ -105,7 +105,7 @@ class AudioStoreViewModel: ObservableObject {
         nowPlayingInfo[MPMediaItemPropertyAlbumTitle] = audio.iconName
         //nowPlayingInfo[MPMediaItemProperty] = "AppIcon"
         
-//        if let image = UIImage(named: "LaunchScreen") { 
+//        if let image = UIImage(named: audios) {
 //            nowPlayingInfo[MPMediaItemPropertyArtwork] = MPMediaItemArtwork(boundsSize: image.size) { size in
 //                return image
 //            }

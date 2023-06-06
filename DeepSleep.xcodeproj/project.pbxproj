@@ -145,7 +145,6 @@
 			children = (
 				65B32BBD299AA2D9002AEED9 /* DeepSleepApp.swift */,
 				65EF6A2C2A243325006D94C0 /* HapticsManager.swift */,
-				65F0B02A2A24DCE5006A37D6 /* UserDefaultKeys.swift */,
 				657C7F8B29E6B6C600E065A3 /* LaunchScreen.storyboard */,
 				659C512329F6DA0900168F1D /* Localizable.strings */,
 				65F0B02A2A24DCE5006A37D6 /* UserDefaultKeys.swift */,
@@ -429,7 +428,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.1.7;
+				CURRENT_PROJECT_VERSION = 1.1.8;
 				DEVELOPMENT_ASSET_PATHS = "\"DeepSleep/Preview Content\"";
 				DEVELOPMENT_TEAM = 4HPPGS6GJD;
 				ENABLE_PREVIEWS = YES;
@@ -448,7 +447,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = silva.fredson.DeepSleep;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -467,7 +466,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.1.7;
+				CURRENT_PROJECT_VERSION = 1.1.8;
 				DEVELOPMENT_ASSET_PATHS = "\"DeepSleep/Preview Content\"";
 				DEVELOPMENT_TEAM = 4HPPGS6GJD;
 				ENABLE_PREVIEWS = YES;
@@ -486,7 +485,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = silva.fredson.DeepSleep;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
