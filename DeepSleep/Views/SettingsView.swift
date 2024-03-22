@@ -99,7 +99,6 @@ struct SettingsView: View {
                                 }
                         ) {
                             
-                            
                             SettingsRowView(name: "developer", linkLabel: "Fredson Silva", linkDestination: "www.linkedin.com/in/silvafredson/")
                             
                             //SettingsRowView(name: "version", content: appVersion)

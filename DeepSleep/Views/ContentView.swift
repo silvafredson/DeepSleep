@@ -50,12 +50,6 @@ struct ContentView: View {
                                         haptics(UIImpactFeedbackGenerator(style: .medium))
                                     }
                                 }
-//                                .onChange(of: audio.isPlaying) { newValue in
-//                                    // it Updates the display of the button when the audio playback state changes
-//                                    if !newValue {
-//                                        audioStored.toggleIsPlaying(for: audio)
-//                                    }
-//                                }
                             } // ForEach
                         } // VGrig
                         .padding()
