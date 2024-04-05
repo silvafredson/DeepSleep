@@ -91,11 +91,11 @@
 		656D5D8829B1346500179D50 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				65C5AF7E299C065D002D3F06 /* RectangleButtonView.swift */,
+				6560708829A6A36900C188E5 /* InnerRectangleButtonView.swift */,
 				65B9822629EB210C00D0C101 /* SettingsView.swift */,
 				6528E12729EE188100A0C70F /* SettingsRowView.swift */,
 				65B32BBF299AA2D9002AEED9 /* ContentView.swift */,
-				65C5AF7E299C065D002D3F06 /* RectangleButtonView.swift */,
-				6560708829A6A36900C188E5 /* InnerRectangleButtonView.swift */,
 				657C7F8929E631B300E065A3 /* LaunchScreen.swift */,
 				653F270C29E6E4B00004FB75 /* LaunchView.swift */,
 			);
